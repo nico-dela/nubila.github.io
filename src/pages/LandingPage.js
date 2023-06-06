@@ -1,62 +1,82 @@
-import React from 'react';
-import '../styles/LandingPage.css';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
+  const [buttons, setButtons] = useState([]);
+
+  useEffect(() => {
+    const generateRandomButton = (link) => {
+      const screenWidth = window.innerWidth;
+      const screenHeight = window.innerHeight;
+
+      const buttonWidth = 100; // Ancho del botón
+      const buttonHeight = 40; // Alto del botón
+
+      const randomX = Math.floor(Math.random() * (screenWidth - buttonWidth));
+      const randomY = Math.floor(Math.random() * (screenHeight - buttonHeight));
+      const randomRotation = Math.floor(Math.random() * 2); // 0 o 1
+
+      return (
+        <Link
+          key={link.url} // Utilizamos la URL como clave única para evitar duplicados
+          to={`/details/${link.url}`} // Ruta a la que se navegará al hacer clic en el botón
+          style={{
+            position: 'absolute',
+            top: randomY,
+            left: randomX,
+            width: buttonWidth,
+            height: buttonHeight,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textDecoration: 'none',
+            color: '#000',
+            transform: `rotate(${randomRotation * 90}deg)`, // Rotación aleatoria
+            transition: 'transform 0.3s ease', // Transición suave
+            backgroundColor: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+            fontFamily: 'Courier New, monospace', // Especifica la fuente de texto aquí 
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.backgroundColor = '#f0f0f0'; // Cambiar el color de fondo al hacer hover
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.backgroundColor = 'transparent'; // Restaurar el color de fondo al dejar de hacer hover
+          }}
+        >
+          {link.text}
+        </Link>
+      );
+    };
+
+    const links = [
+      { text: 'Botón 1', url: 'button1' },
+      { text: 'Botón 2', url: 'button2' },
+      { text: 'Botón 3', url: 'button3' },
+      { text: 'Botón 4', url: 'button4' },
+      { text: 'Botón 5', url: 'button5' },
+    ];
+
+    const generatedButtons = [];
+    const generatedUrls = new Set();
+
+    while (generatedButtons.length < 5) {
+      const randomIndex = Math.floor(Math.random() * links.length);
+      const randomLink = links[randomIndex];
+
+      if (!generatedUrls.has(randomLink.url)) {
+        generatedButtons.push(generateRandomButton(randomLink));
+        generatedUrls.add(randomLink.url);
+      }
+    }
+
+    setButtons(generatedButtons);
+  }, []);
+
   return (
-    <div className="container">
-      <header>
-        <h1>Nubila</h1>
-        <nav>
-          <ul>
-            <li><a href="#about">Acerca</a></li>
-            <li><a href="#music">Material</a></li>
-            <li><a href="#tour">Fechas</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <section id="about">
-          <h2>Acerca</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu libero ligula. Phasellus ac massa a nunc eleifend placerat. Ut cursus cursus dui ut consectetur.</p>
-        </section>
-        <section id="music">
-          <h2>Música</h2>
-          <div>
-            <h3>Título de la canción 1</h3>
-            <audio controls>
-              <source src="song1.mp3" type="audio/mpeg" />
-            </audio>
-          </div>
-          <div>
-            <h3>Título de la canción 2</h3>
-            <audio controls>
-              <source src="song2.mp3" type="audio/mpeg" />
-            </audio>
-          </div>
-        </section>
-        <section id="tour">
-          <h2>Fechas</h2>
-          <p>Echa un vistazo a nuestras próximas fechas de gira y únete a nosotros en un concierto cerca de ti:</p>
-          <ul>
-            <li>Ciudad 1 - Fecha</li>
-            <li>Ciudad 2 - Fecha</li>
-            <li>Ciudad 3 - Fecha</li>
-          </ul>
-        </section>
-        <section id="contact">
-          <h2>Contacto</h2>
-          <p>¡Nos encantaría saber de ti! Envíanos un mensaje a example@example.com o conéctate con nosotros en las redes sociales:</p>
-          <div>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <p>&copy; {new Date().getFullYear()} Indie Band Name. Todos los derechos reservados.</p>
-      </footer>
+    <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+      {buttons}
     </div>
   );
 };

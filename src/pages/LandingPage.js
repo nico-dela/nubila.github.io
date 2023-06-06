@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import image from '../fondo.png';
+
 const LandingPage = () => {
   const [buttons, setButtons] = useState([]);
 
   useEffect(() => {
-    const generateRandomButton = (link) => {
+    const generateRandomButton = (link, isStrikeThrough) => {
       const screenWidth = window.innerWidth;
       const screenHeight = window.innerHeight;
 
@@ -19,7 +21,7 @@ const LandingPage = () => {
       return (
         <Link
           key={link.url} // Utilizamos la URL como clave única para evitar duplicados
-          to={`/details/${link.url}`} // Ruta a la que se navegará al hacer clic en el botón
+          to={`/nubila/${link.url}`} // Ruta a la que se navegará al hacer clic en el botón
           style={{
             position: 'absolute',
             top: randomY,
@@ -29,20 +31,20 @@ const LandingPage = () => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-            textDecoration: 'none',
+            textDecoration: isStrikeThrough ? 'line-through' : 'none', // Aplica tachado si es el botón seleccionado
             color: '#000',
             transform: `rotate(${randomRotation * 90}deg)`, // Rotación aleatoria
             transition: 'transform 0.3s ease', // Transición suave
             backgroundColor: 'transparent',
             border: 'none',
             cursor: 'pointer',
-            fontFamily: 'Courier New, monospace', // Especifica la fuente de texto aquí 
+            fontFamily: 'Courier New, monospace', // Especifica la fuente de texto aquí
           }}
           onMouseEnter={(e) => {
-            e.target.style.backgroundColor = '#f0f0f0'; // Cambiar el color de fondo al hacer hover
+            e.target.style.opacity = '0.5'; // Cambiar el color de fondo al hacer hover
           }}
           onMouseLeave={(e) => {
-            e.target.style.backgroundColor = 'transparent'; // Restaurar el color de fondo al dejar de hacer hover
+            e.target.style.opacity = '1'; // Restaurar el color de fondo al dejar de hacer hover
           }}
         >
           {link.text}
@@ -51,31 +53,34 @@ const LandingPage = () => {
     };
 
     const links = [
-      { text: 'Botón 1', url: 'button1' },
-      { text: 'Botón 2', url: 'button2' },
-      { text: 'Botón 3', url: 'button3' },
-      { text: 'Botón 4', url: 'button4' },
-      { text: 'Botón 5', url: 'button5' },
+      { text: 'Home', url: 'home' },
+      { text: 'Musica', url: 'musica' },
+      { text: 'Proceso', url: 'proceso' },
+      { text: 'Creditos', url: 'creditos' },
     ];
 
-    const generatedButtons = [];
-    const generatedUrls = new Set();
+    const randomIndex = Math.floor(Math.random() * (links.length + 1)); // Agrega 1 a la longitud para incluir la posibilidad de ningún botón tachado
+    const selectedLink = randomIndex < links.length ? links[randomIndex] : null;
 
-    while (generatedButtons.length < 5) {
-      const randomIndex = Math.floor(Math.random() * links.length);
-      const randomLink = links[randomIndex];
-
-      if (!generatedUrls.has(randomLink.url)) {
-        generatedButtons.push(generateRandomButton(randomLink));
-        generatedUrls.add(randomLink.url);
-      }
-    }
+    const generatedButtons = links.map((link) =>
+      generateRandomButton(link, link === selectedLink)
+    );
 
     setButtons(generatedButtons);
   }, []);
 
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
+    <div
+      style={{
+        position: 'relative',
+        width: '100vw',
+        height: '100vh',
+        backgroundImage: `url(${image})`,
+        backgroundSize: 'contain',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       {buttons}
     </div>
   );

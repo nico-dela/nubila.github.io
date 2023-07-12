@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import image from '../fondo.png';
-
 const LandingPage = () => {
   const [buttons, setButtons] = useState([]);
 
@@ -38,7 +36,8 @@ const LandingPage = () => {
             backgroundColor: 'transparent',
             border: 'none',
             cursor: 'pointer',
-            fontFamily: 'Courier New, monospace', // Especifica la fuente de texto aquí
+            fontFamily: 'Bebas Neue, sans-serif', // Especifica la fuente de texto aquí
+            fontSize: 40
           }}
           onMouseEnter={(e) => {
             e.target.style.opacity = '0.5'; // Cambiar el color de fondo al hacer hover
@@ -53,10 +52,12 @@ const LandingPage = () => {
     };
 
     const links = [
-      { text: 'Home', url: 'home' },
-      { text: 'Musica', url: 'musica' },
-      { text: 'Proceso', url: 'proceso' },
-      { text: 'Creditos', url: 'creditos' },
+      { text: 'Oceánica', url: 'oceanica' },
+      { text: 'Girasoles', url: 'girasoles' },
+      { text: 'Bolerito de Stapelia', url: 'bolerito' },
+      { text: 'Frío', url: 'frio' },
+      { text: 'Mariposa origami', url: 'mariposa' },
+      { text: 'Limonero', url: 'limonero' },
     ];
 
     const randomIndex = Math.floor(Math.random() * (links.length + 1)); // Agrega 1 a la longitud para incluir la posibilidad de ningún botón tachado
@@ -75,7 +76,7 @@ const LandingPage = () => {
         position: 'relative',
         width: '100vw',
         height: '100vh',
-        backgroundImage: `url(${image})`,
+        background: 'linear-gradient(to bottom, #0099ff, #00ccff, #66ccff, #99ccff, #ccddff, #e6e6ff)',
         backgroundSize: 'contain',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',

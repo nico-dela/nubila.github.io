@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CreditosPage = () => {
+const MariposaPage = () => {
   return (
     <div>
-      <h1>Créditos</h1>
+      <h1 style={{fontFamily: 'Bebas Neue, sans-serif'}}>Mariposa Origami</h1>
       {/* Agrega aquí el código JSX de tu página de detalles */}
       <Link to="/nubila" style={{ textDecoration: "none" }}>
         <button
@@ -34,4 +34,4 @@ const CreditosPage = () => {
   );
 };
 
-export default CreditosPage;
+export default MariposaPage;

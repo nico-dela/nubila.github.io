@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProcesoPage = () => {
+const LimoneroPage = () => {
   return (
     <div>
-      <h1>Proceso</h1>
+      <h1 style={{fontFamily: 'Bebas Neue, sans-serif'}}>Limonero</h1>
       {/* Agrega aquí el código JSX de tu página de detalles */}
       <Link to="/nubila" style={{ textDecoration: "none" }}>
         <button
@@ -34,4 +34,4 @@ const ProcesoPage = () => {
   );
 };
 
-export default ProcesoPage;
+export default LimoneroPage;

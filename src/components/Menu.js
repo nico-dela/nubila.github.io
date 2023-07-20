@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import '../styles/Menu.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import laCasaLogo from "../assets/images/lacasa-logo.png";
+import "../styles/Menu.css";
 
 const Menu = ({ background }) => {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,24 +21,45 @@ const Menu = ({ background }) => {
       }}
     >
       <button className="menu-button" onClick={toggleMenu}>
-        <span className={showMenu ? 'menu-bar open' : 'menu-bar'}></span>
-        <span className={showMenu ? 'menu-bar open' : 'menu-bar'}></span>
-        <span className={showMenu ? 'menu-bar open' : 'menu-bar'}></span>
+        <span className={showMenu ? "menu-bar open" : "menu-bar"}></span>
+        <span className={showMenu ? "menu-bar open" : "menu-bar"}></span>
+        <span className={showMenu ? "menu-bar open" : "menu-bar"}></span>
       </button>
       {showMenu && (
         <div className="menu-dropdown">
           <div className="menu-item">
-            <Link to="/nubila/creditos" className="menu-link" onClick={toggleMenu}>
+            <Link to="/nubila" className="menu-link" onClick={toggleMenu} img>
+              <img
+                src={laCasaLogo}
+                alt="La Casa Mutante Logo"
+                className="menu-logo"
+              />
+            </Link>
+          </div>
+          <div className="menu-item">
+            <Link
+              to="/nubila/creditos"
+              className="menu-link"
+              onClick={toggleMenu}
+            >
               Créditos
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/nubila/acerca" className="menu-link" onClick={toggleMenu}>
+            <Link
+              to="/nubila/acerca"
+              className="menu-link"
+              onClick={toggleMenu}
+            >
               Nubila
             </Link>
           </div>
           <div className="menu-item">
-            <Link to="/nubila/colabora" className="menu-link" onClick={toggleMenu}>
+            <Link
+              to="/nubila/colabora"
+              className="menu-link"
+              onClick={toggleMenu}
+            >
               Colaborá
             </Link>
           </div>

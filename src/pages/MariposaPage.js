@@ -5,7 +5,7 @@ import "../styles/CreditosPage.css";
 const MariposaPage = () => {
   return (
     <div className="container">
-      <h1 className="heading">Oceánica</h1>
+      <h1 className="heading">Mariposa Origami</h1>
       <div className="credits">
         {/* Add your credit details here */}
       </div>

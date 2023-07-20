@@ -5,7 +5,7 @@ import "../styles/CreditosPage.css";
 const BoleritoPage = () => {
   return (
     <div className="container">
-      <h1 className="heading">Bolerito</h1>
+      <h1 className="heading">Bolerito de Stapelia</h1>
       <div className="credits">
         {/* Add your credit details here */}
       </div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nubila/static/css/main.4d67174a.css",
-    "main.js": "/nubila/static/js/main.cf3a18d8.js",
+    "main.css": "/nubila/static/css/main.c5c534ba.css",
+    "main.js": "/nubila/static/js/main.dd69994e.js",
     "static/js/787.572a26b7.chunk.js": "/nubila/static/js/787.572a26b7.chunk.js",
     "static/media/Frio.mp3": "/nubila/static/media/Frio.29477fd0326af9a2c95b.mp3",
     "static/media/Girasoles.mp3": "/nubila/static/media/Girasoles.0a07284a3dfb34bb739c.mp3",
@@ -11,12 +11,12 @@
     "static/media/Oceanica.mp3": "/nubila/static/media/Oceanica.39b402ff3280d1ce6309.mp3",
     "static/media/lacasa-logo.png": "/nubila/static/media/lacasa-logo.22e30147af346a26676f.png",
     "index.html": "/nubila/index.html",
-    "main.4d67174a.css.map": "/nubila/static/css/main.4d67174a.css.map",
-    "main.cf3a18d8.js.map": "/nubila/static/js/main.cf3a18d8.js.map",
+    "main.c5c534ba.css.map": "/nubila/static/css/main.c5c534ba.css.map",
+    "main.dd69994e.js.map": "/nubila/static/js/main.dd69994e.js.map",
     "787.572a26b7.chunk.js.map": "/nubila/static/js/787.572a26b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d67174a.css",
-    "static/js/main.cf3a18d8.js"
+    "static/css/main.c5c534ba.css",
+    "static/js/main.dd69994e.js"
   ]
 }

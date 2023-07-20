@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import "../styles/LandingPage.css";
 
 const LandingPage = () => {
   const [buttons, setButtons] = useState([]);
@@ -21,29 +22,29 @@ const LandingPage = () => {
           key={link.url} // Utilizamos la URL como clave única para evitar duplicados
           to={`/nubila/${link.url}`} // Ruta a la que se navegará al hacer clic en el botón
           style={{
-            position: 'absolute',
+            position: "absolute",
             top: randomY,
             left: randomX,
             width: buttonWidth,
             height: buttonHeight,
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textDecoration: isStrikeThrough ? 'line-through' : 'none', // Aplica tachado si es el botón seleccionado
-            color: '#000',
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            textDecoration: isStrikeThrough ? "line-through" : "none", // Aplica tachado si es el botón seleccionado
+            color: "#000",
             transform: `rotate(${randomRotation * 90}deg)`, // Rotación aleatoria
-            transition: 'transform 0.3s ease', // Transición suave
-            backgroundColor: 'transparent',
-            border: 'none',
-            cursor: 'pointer',
-            fontFamily: 'Bebas Neue, sans-serif', // Especifica la fuente de texto aquí
-            fontSize: 40
+            transition: "transform 0.3s ease", // Transición suave
+            backgroundColor: "transparent",
+            border: "none",
+            cursor: "pointer",
+            fontFamily: "Bebas Neue, sans-serif", // Especifica la fuente de texto aquí
+            fontSize: 40,
           }}
           onMouseEnter={(e) => {
-            e.target.style.opacity = '0.5'; // Cambiar el color de fondo al hacer hover
+            e.target.style.opacity = "0.5"; // Cambiar el color de fondo al hacer hover
           }}
           onMouseLeave={(e) => {
-            e.target.style.opacity = '1'; // Restaurar el color de fondo al dejar de hacer hover
+            e.target.style.opacity = "1"; // Restaurar el color de fondo al dejar de hacer hover
           }}
         >
           {link.text}
@@ -52,12 +53,12 @@ const LandingPage = () => {
     };
 
     const links = [
-      { text: 'Oceánica', url: 'oceanica' },
-      { text: 'Girasoles', url: 'girasoles' },
-      { text: 'Bolerito de Stapelia', url: 'bolerito' },
-      { text: 'Frío', url: 'frio' },
-      { text: 'Mariposa origami', url: 'mariposa' },
-      { text: 'Limonero', url: 'limonero' },
+      { text: "Oceánica", url: "oceanica" },
+      { text: "Girasoles", url: "girasoles" },
+      { text: "Bolerito de Stapelia", url: "bolerito" },
+      { text: "Frío", url: "frio" },
+      { text: "Mariposa origami", url: "mariposa" },
+      { text: "Limonero", url: "limonero" },
     ];
 
     const randomIndex = Math.floor(Math.random() * (links.length + 1)); // Agrega 1 a la longitud para incluir la posibilidad de ningún botón tachado
@@ -70,21 +71,42 @@ const LandingPage = () => {
     setButtons(generatedButtons);
   }, []);
 
-  return (
-    <div
-      style={{
-        position: 'relative',
-        width: '100vw',
-        height: '100vh',
-        background: 'linear-gradient(to bottom, #0099ff, #00ccff, #66ccff, #99ccff, #ccddff, #e6e6ff)',
-        backgroundSize: 'contain',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-      }}
-    >
-      {buttons}
-    </div>
-  );
+  const hexColors = [
+    "#86B0A6",
+    "#a385cf",
+    "#A6C4CF",
+    "#E1CFCB",
+    "#2e7b7f",
+    "#557B86",
+    "#EB7E83",
+  ];
+
+  const randomGradient = hexColors
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 3)
+    .join(",");
+
+    return (
+      <div
+        className="landing-page"
+        style={{
+          position: "relative",
+          width: "100vw",
+          height: "100vh",
+        }}
+      >
+        <div
+          className="background-gradient"
+          style={{
+            background: `linear-gradient(to bottom, ${randomGradient})`,
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        ></div>
+        {buttons}
+      </div>
+    );
 };
 
 export default LandingPage;

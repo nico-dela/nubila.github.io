@@ -9,6 +9,7 @@ import FrioPage from './pages/FrioPage';
 import LimoneroPage from './pages/LimoneroPage';
 import AcercaPage from './pages/AcercaPage';
 import CreditosPage from './pages/CreditosPage';
+import ColaboraPage from './pages/ColaboraPage';
 import MusicPlayer from './components/MusicPlayer';
 import Menu from './components/Menu';
 import './App.css';
@@ -28,7 +29,7 @@ const App = () => {
           <Route path="/nubila/limonero" element={<LimoneroPage />} />
           <Route path="/nubila/creditos" element={<CreditosPage />} />
           <Route path="/nubila/acerca" element={<AcercaPage />} />
-          <Route path="/nubila/colabora" element={<LimoneroPage />} />
+          <Route path="/nubila/colabora" element={<ColaboraPage />} />
         </Routes>
         <MusicPlayer />
       </div>

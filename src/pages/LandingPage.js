@@ -82,7 +82,7 @@ const LandingPage = () => {
   ];
 
   const randomGradient = hexColors
-    .sort(() => 0.5 - Math.random())
+    .sort(() => 0.33 - Math.random())
     .slice(0, 3)
     .join(",");
 

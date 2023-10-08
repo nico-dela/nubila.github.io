@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Transition, CSSTransition } from "react-transition-group";
-import mariposaImage from "../assets/images/mariposa-letra.png";
+import mariposaImage from "../assets/images/frio-letra.png";
 import "../styles/LyricsPage.css";
 
 const MariposaPage = () => {

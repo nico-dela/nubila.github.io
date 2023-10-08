@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import { Transition, CSSTransition } from "react-transition-group";
-import GirasolesImage from "../assets/images/girasoles-letra.png";
+import GirasolesImage from "../assets/images/frio-letra.png";
 import "../styles/LyricsPage.css";
 
 const GirasolesPage = () => {

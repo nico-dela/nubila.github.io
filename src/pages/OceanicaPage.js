@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import oceanicaImage from "../assets/images/oceanica-letra.png";
+import oceanicaImage from "../assets/images/frio-letra.png";
 import { Transition, CSSTransition } from "react-transition-group";
 import "../styles/LyricsPage.css";
 

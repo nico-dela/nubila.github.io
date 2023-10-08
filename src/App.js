@@ -1,24 +1,27 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import OceanicaPage from './pages/OceanicaPage';
-import GirasolesPage from './pages/GirasolesPage';
-import BoleritoPage from './pages/BoleritoPage';
-import MariposaPage from './pages/MariposaPage';
-import FrioPage from './pages/FrioPage';
-import LimoneroPage from './pages/LimoneroPage';
-import AcercaPage from './pages/AcercaPage';
-import CreditosPage from './pages/CreditosPage';
-import ColaboraPage from './pages/ColaboraPage';
-import MusicPlayer from './components/MusicPlayer';
-import Menu from './components/Menu';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import OceanicaPage from "./pages/OceanicaPage";
+import GirasolesPage from "./pages/GirasolesPage";
+import BoleritoPage from "./pages/BoleritoPage";
+import MariposaPage from "./pages/MariposaPage";
+import FrioPage from "./pages/FrioPage";
+import LimoneroPage from "./pages/LimoneroPage";
+import AcercaPage from "./pages/AcercaPage";
+import CreditosPage from "./pages/CreditosPage";
+import ColaboraPage from "./pages/ColaboraPage";
+import MusicPlayer from "./components/MusicPlayer";
+import SocialMedia from "./components/SocialMedia";
+import Menu from "./components/Menu";
+
+import "./App.css";
 
 const App = () => {
   return (
     <Router>
       <div className="container">
         <Menu />
+        <SocialMedia />
         <Routes>
           <Route path="/nubila" element={<LandingPage />} />
           <Route path="/nubila/oceanica" element={<OceanicaPage />} />

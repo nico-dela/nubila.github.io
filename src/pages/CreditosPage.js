@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/CommonPage.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import "../styles/CreditosPage.css";
 
 const CreditosPage = () => {
   return (

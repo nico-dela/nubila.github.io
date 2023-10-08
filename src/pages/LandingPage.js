@@ -9,7 +9,7 @@ const LandingPage = () => {
   useEffect(() => {
     const generateRandomButton = (link, isStrikeThrough) => {
       const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight;
+      const screenHeight = window.innerHeight * 0.8;
 
       const buttonWidth = 100; // Ancho del botón
       const buttonHeight = 40; // Alto del botón

@@ -13,10 +13,6 @@
     text-align: center;
   }
   
-  .credits {
-    /* Add styles for the credit details section */
-  }
-  
   .link {
     text-decoration: none;
   }
@@ -36,4 +32,3 @@
   .button:hover {
     opacity: 0.5;
   }
-  

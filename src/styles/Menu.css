@@ -17,6 +17,7 @@
   width: 30px;
   height: 20px;
   padding: 0;
+  transition: transform 0.3s ease; /* Agrega una transición suave para la transformación */
 }
 
 .menu-bar {
@@ -37,18 +38,33 @@
   width: 200px;
   position: absolute;
   top: 100%;
-  background: rgb(255, 255, 255, 0.7);
-  font-family: 'Bebas Neue', sans-serif;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(-10px); /* Inicialmente desplazado hacia arriba */
+  
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.menu-dropdown.active {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s;
 }
 
 .menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   font-size: 30px;
 }
 
 .menu-link {
-  color: #333;
+  color: #8191BA;
   text-decoration: none;
+  font-family: 'Nubifont';
+  font-size: 30px;
 }
 
 .menu-logo {

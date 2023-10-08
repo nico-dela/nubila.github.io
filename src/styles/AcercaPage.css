@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.container.playing {
+  background-color: rgb(65, 65, 65);
+}
+
+.heading {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}

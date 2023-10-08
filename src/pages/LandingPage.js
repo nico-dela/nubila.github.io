@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
 import "../styles/LandingPage.css";
 
 const LandingPage = () => {
@@ -57,7 +58,7 @@ const LandingPage = () => {
       { text: "Girasoles", url: "girasoles" },
       { text: "Bolerito de Stapelia", url: "bolerito" },
       { text: "Frío", url: "frio" },
-      { text: "Mariposa origami", url: "mariposa" },
+      { text: "Mariposa Origami", url: "mariposa" },
       { text: "Limonero", url: "limonero" },
     ];
 

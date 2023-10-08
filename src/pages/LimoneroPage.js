@@ -1,19 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import "../styles/CommonPage.css";
+import React from "react";
+import { Link } from "react-router-dom";
 
-const OceanicaPage = () => {
+import { Transition, CSSTransition } from "react-transition-group";
+import limoneroImage from "../assets/images/limonero-letra.png";
+import "../styles/LyricsPage.css";
+
+const LimoneroPage = () => {
   return (
-    <div className="container">
-      <h1 className="heading">Limonero</h1>
-      <div className="credits">
-        {/* Add your credit details here */}
-      </div>
-      <Link to="/nubila" className="link">
-        <button className="button">Volver</button>
-      </Link>
-    </div>
+    <Transition in={true} timeout={300} appear={true}>
+      {(status) => (
+        <CSSTransition
+          in={status === "entered"}
+          timeout={300}
+          classNames="page"
+          unmountOnExit
+        >
+          <div className="lyrics">
+            <img src={limoneroImage} alt="Limonero partitura" />
+            <Link to="/nubila" className="link">
+              <button className="button">Volver</button>
+            </Link>
+          </div>
+        </CSSTransition>
+      )}
+    </Transition>
   );
 };
 
-export default OceanicaPage;
+export default LimoneroPage;

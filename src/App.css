@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -10,7 +11,7 @@ html, body {
 }
 
 @font-face {
-  font-family: "Nubifont";   /*Can be any text*/
+  font-family: "Nubifont";
   src: local("Nubifont-Regular"),
     url("./assets/fonts/Nubifont-Regular.ttf") format("truetype");
 }

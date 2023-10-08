@@ -1,13 +1,18 @@
-import React, { useState, useRef, useEffect, useMemo } from 'react';
-import { MdPlayArrow, MdPause, MdSkipNext, MdSkipPrevious } from 'react-icons/md';
-import '../styles/MusicPlayer.css';
+import React, { useState, useRef, useEffect, useMemo } from "react";
+import {
+  MdPlayArrow,
+  MdPause,
+  MdSkipNext,
+  MdSkipPrevious,
+} from "react-icons/md";
+import "../styles/MusicPlayer.css";
 
-import BoleritoStapelia from '../assets/music/Bolerito de Stapelia.mp3';
-import Frio from '../assets/music/Frio.mp3';
-import Girasoles from '../assets/music/Girasoles.mp3';
-import Limonero from '../assets/music/Limonero.mp3';
-import MariposaOrigami from '../assets/music/Mariposa Origami.mp3';
-import Oceanica from '../assets/music/Oceanica.mp3';
+import BoleritoStapelia from "../assets/music/Bolerito de Stapelia.mp3";
+import Frio from "../assets/music/Frio.mp3";
+import Girasoles from "../assets/music/Girasoles.mp3";
+import Limonero from "../assets/music/Limonero.mp3";
+import MariposaOrigami from "../assets/music/Mariposa Origami.mp3";
+import Oceanica from "../assets/music/Oceanica.mp3";
 
 const MusicPlayer = () => {
   const audioRef = useRef(null);
@@ -19,12 +24,12 @@ const MusicPlayer = () => {
 
   const songs = useMemo(
     () => [
-      { title: 'Bolerito de Stapelia', source: BoleritoStapelia },
-      { title: 'Frio', source: Frio },
-      { title: 'Girasoles', source: Girasoles },
-      { title: 'Limonero', source: Limonero },
-      { title: 'Mariposa Origami', source: MariposaOrigami },
-      { title: 'Oceanica', source: Oceanica },
+      { title: "Bolerito de Stapelia", source: BoleritoStapelia },
+      { title: "Frio", source: Frio },
+      { title: "Girasoles", source: Girasoles },
+      { title: "Limonero", source: Limonero },
+      { title: "Mariposa Origami", source: MariposaOrigami },
+      { title: "Oceanica", source: Oceanica },
     ],
     []
   );

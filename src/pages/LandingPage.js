@@ -38,7 +38,8 @@ const LandingPage = () => {
             backgroundColor: "transparent",
             border: "none",
             cursor: "pointer",
-            fontFamily: "Bebas Neue, sans-serif", // Especifica la fuente de texto aquí
+            fontWeight: "bold",
+            fontFamily: "Nubifont", // Especifica la fuente de texto aquí
             fontSize: 40,
           }}
           onMouseEnter={(e) => {

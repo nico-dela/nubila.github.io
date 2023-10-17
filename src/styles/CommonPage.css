@@ -20,8 +20,8 @@
   .button {
     display: flex;
     padding: 1rem 2rem;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
+    font-family: 'Nubifont';
+    font-size: 2rem;
     color: #000;
     background-color: transparent;
     border: none;

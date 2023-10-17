@@ -63,7 +63,12 @@
   color: #8191BA;
   text-decoration: none;
   font-family: 'Nubifont';
-  font-size: 30px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.menu-link:hover {
+  opacity: 0.5;
 }
 
 .menu-logo {

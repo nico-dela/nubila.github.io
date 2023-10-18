@@ -2,11 +2,24 @@
   position: absolute;
   z-index: 9999;
   top: 14px;
-  right: 14px;
+  right: 53px;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+}
+
+.spotify-link {
+  position: absolute;
+  z-index: 9999;
+  top: 14px;
+  right: 10px;
   transition: transform 0.2s ease;
   text-decoration: none;
 }
 
 .instagram-link:hover {
+  transform: scale(1.2);
+}
+
+.spotify-link:hover {
   transform: scale(1.2);
 }

@@ -1,0 +1,14 @@
+.credits {
+  text-align: left;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+.credit-item {
+  font-size: 18px;
+  color: #555;
+  list-style-type: square; /* Cambia el estilo de la viñeta de la lista */
+  margin: 10px 0;
+}

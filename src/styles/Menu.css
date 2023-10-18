@@ -17,14 +17,14 @@
   width: 30px;
   height: 20px;
   padding: 0;
-  transition: transform 0.3s ease; /* Agrega una transición suave para la transformación */
+  transition: transform 0.5s ease; /* Agrega una transición suave para la transformación */
 }
 
 .menu-bar {
   width: 100%;
   height: 2px;
   background: #000;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .open {
@@ -60,11 +60,10 @@
 }
 
 .menu-link {
-  color: #8191BA;
-  text-decoration: none;
-  font-family: 'Nubifont';
-  font-weight: bold;
-  font-size: 25px;
+  /* font-family: 'Open Sans', sans-serif; */
+  font-weight: normal;
+  font-size: 35px;
+  text-align: center;
 }
 
 .menu-link:hover {

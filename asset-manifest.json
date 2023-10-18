@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nubila/static/css/main.69d3cd75.css",
-    "main.js": "/nubila/static/js/main.23278283.js",
+    "main.css": "/nubila/static/css/main.41e33eaa.css",
+    "main.js": "/nubila/static/js/main.5a26a8b9.js",
     "static/js/787.572a26b7.chunk.js": "/nubila/static/js/787.572a26b7.chunk.js",
     "static/media/Frio.mp3": "/nubila/static/media/Frio.29477fd0326af9a2c95b.mp3",
     "static/media/Girasoles.mp3": "/nubila/static/media/Girasoles.60ad749bea6c1dc08828.mp3",
@@ -14,12 +14,13 @@
     "static/media/Nubifont-Regular.ttf": "/nubila/static/media/Nubifont-Regular.8d345b35339e6ad6df15.ttf",
     "static/media/instagram.svg": "/nubila/static/media/instagram.849150f40cd137617202962a2e728c4d.svg",
     "index.html": "/nubila/index.html",
-    "main.69d3cd75.css.map": "/nubila/static/css/main.69d3cd75.css.map",
-    "main.23278283.js.map": "/nubila/static/js/main.23278283.js.map",
+    "static/media/spotify.svg": "/nubila/static/media/spotify.ee43100e7fc43419b0053adb32d25461.svg",
+    "main.41e33eaa.css.map": "/nubila/static/css/main.41e33eaa.css.map",
+    "main.5a26a8b9.js.map": "/nubila/static/js/main.5a26a8b9.js.map",
     "787.572a26b7.chunk.js.map": "/nubila/static/js/787.572a26b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69d3cd75.css",
-    "static/js/main.23278283.js"
+    "static/css/main.41e33eaa.css",
+    "static/js/main.5a26a8b9.js"
   ]
 }

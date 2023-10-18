@@ -1,20 +1,10 @@
-.acerca-container {
-  position: relative;
-  overflow: hidden;
-  background-color: rgb(65, 65, 65);
+#main-container {
+  transition: background-color 0.5s ease; /* Cambia la duración y la función de tiempo según tus preferencias */
 }
 
-.heading {
-  font-family: "Bebas Neue", sans-serif;
+/* .heading {
+  font-family: 'Nubifont';
   font-size: 3rem;
   margin-top: 1rem;
   text-align: center;
-}
-
-.link {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+} */

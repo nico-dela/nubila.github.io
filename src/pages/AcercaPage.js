@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import YouTube from 'react-youtube';
+import YouTube from "react-youtube";
 import "../styles/AcercaPage.css";
 
 const AcercaPage = () => {
   const screenWidth = window.innerWidth;
   const screenHeight = window.innerHeight;
 
+  const [backgroundColor, setBackgroundColor] = useState("");
+
   const opts = {
-    height: screenHeight * 0.70,
+    height: screenHeight * 0.7,
     width: screenWidth,
     playerVars: {
       autoplay: 1,
@@ -27,21 +29,24 @@ const AcercaPage = () => {
   };
 
   const onPlayerStateChange = (event) => {
-    if (event.data === window.YT.PlayerState.PLAYING) {      
+    if (event.data === window.YT.PlayerState.PLAYING) {
+      setBackgroundColor("rgb(65, 65, 65)");
       pauseMusic();
+    } else {
+      setBackgroundColor("");
     }
   };
 
   return (
-    <div
-      className="acerca-container"
-      style={{
-        transition: "background-color 0.3s ease",
-      }}
-    >
-      <h1 className="heading">Sentimiento oceánico</h1>
-        <div id="youtube-player">
-          <YouTube videoId="zO1L7Grx1VQ" opts={opts} onReady={onPlayerReady} onStateChange={onPlayerStateChange}/>;
+    <div className="container" style={{ backgroundColor }} id="main-container">
+      <h1 className="heading">Oceánica</h1>
+      <div>
+        <YouTube
+          videoId="zO1L7Grx1VQ"
+          opts={opts}
+          onReady={onPlayerReady}
+          onStateChange={onPlayerStateChange}
+        />
       </div>
       <Link to="/nubila" className="link">
         <button className="button">Volver</button>

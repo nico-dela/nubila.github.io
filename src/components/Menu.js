@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import laCasaLogo from "../assets/images/lacasa-logo.png";
+import nubilaLogo from "../assets/images/nubila-logo.png";
 import "../styles/Menu.css";
 
 const Menu = ({ background }) => {
@@ -29,9 +29,10 @@ const Menu = ({ background }) => {
         <div className="menu-item">
           <Link to="/nubila" className="menu-link" onClick={toggleMenu}>
             <img
-              src={laCasaLogo}
-              alt="La Casa Mutante Logo"
+              src={nubilaLogo}
+              alt="Nubila Logo"
               className="menu-logo"
+              color="#8191BA"
             />
           </Link>
         </div>

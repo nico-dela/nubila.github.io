@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-import oceanicaImage from "../assets/images/frio-letra.png";
+import oceanicaImage from "../assets/images/oceanica-letra.png";
 import { Transition, CSSTransition } from "react-transition-group";
 import "../styles/LyricsPage.css";
 
 const OceanicaPage = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <Transition in={true} timeout={300} appear={true}>
       {(status) => (
@@ -16,7 +22,12 @@ const OceanicaPage = () => {
           unmountOnExit
         >
           <div className="lyrics">
-            <img src={oceanicaImage} alt="Oceánica partitura" />
+            <img
+              src={oceanicaImage}
+              alt="Oceánica partitura"
+              className={isExpanded ? "expanded" : ""}
+              onClick={toggleExpand}
+            />
             <Link to="/nubila" className="link">
               <button className="button">Volver</button>
             </Link>

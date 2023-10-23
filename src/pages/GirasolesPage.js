@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Transition, CSSTransition } from "react-transition-group";
-import GirasolesImage from "../assets/images/frio-letra.png";
+import GirasolesImage from "../assets/images/girasoles-letra.png";
 import "../styles/LyricsPage.css";
 
 const GirasolesPage = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <Transition in={true} timeout={300} appear={true}>
       {(status) => (
@@ -16,7 +22,12 @@ const GirasolesPage = () => {
           unmountOnExit
         >
           <div className="lyrics">
-            <img src={GirasolesImage} alt="Girasoles partitura" />
+            <img
+              src={GirasolesImage}
+              alt="Girasoles partitura"
+              className={isExpanded ? "expanded" : ""}
+              onClick={toggleExpand}
+            />
             <Link to="/nubila" className="link">
               <button className="button">Volver</button>
             </Link>

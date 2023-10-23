@@ -2,13 +2,27 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center vertically and horizontally */
+  justify-content: center;
   height: 100vh;
   max-width: 100%;
-  text-align: center; /* Center inline elements */
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow: hidden; /* Ocultar la barra de desplazamiento */
+}
+
+.lyrics.expanded {
+  overflow: auto; /* Restaurar la barra de desplazamiento cuando la imagen se expanda */
 }
 
 .lyrics img {
-  max-width: 100%;
-  height: auto; /* Maintain the image's aspect ratio */
+  max-width: 100%; /* Limitar el ancho de la imagen al 100% del contenedor */
+  max-height: 100%; /* Limitar la altura de la imagen al 100% del contenedor */
+  cursor: pointer;
+}
+
+.expanded {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+  cursor: pointer;
 }

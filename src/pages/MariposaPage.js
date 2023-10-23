@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Transition, CSSTransition } from "react-transition-group";
-import mariposaImage from "../assets/images/frio-letra.png";
+import mariposaImage from "../assets/images/mariposa-letra.png";
 import "../styles/LyricsPage.css";
 
 const MariposaPage = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <Transition in={true} timeout={300} appear={true}>
       {(status) => (
@@ -16,10 +22,15 @@ const MariposaPage = () => {
           unmountOnExit
         >
           <div className="lyrics">
-            <img src={mariposaImage} alt="Mariposa origami partitura" />
+            <img
+              src={mariposaImage}
+              alt="Mariposa origami partitura"
+              className={isExpanded ? "expanded" : ""}
+              onClick={toggleExpand}
+            />
             <Link to="/nubila" className="link">
-              <button className="button">Volver</button>
-            </Link>
+            <button className="button">Volver</button>
+          </Link>
           </div>
         </CSSTransition>
       )}

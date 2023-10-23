@@ -1,19 +1,31 @@
 .instagram-link {
   position: absolute;
   z-index: 9999;
-  top: 14px;
-  right: 53px;
+  top: 16px;
+  right: 90px;
   transition: transform 0.2s ease;
   text-decoration: none;
+  opacity: 0.6;
 }
 
 .spotify-link {
   position: absolute;
   z-index: 9999;
-  top: 14px;
+  top: 16px;
+  right: 50px;
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.youtube-link {
+  position: absolute;
+  z-index: 9999;
+  top: 16px;
   right: 10px;
   transition: transform 0.2s ease;
   text-decoration: none;
+  opacity: 0.6;
 }
 
 .instagram-link:hover {
@@ -21,5 +33,9 @@
 }
 
 .spotify-link:hover {
+  transform: scale(1.2);
+}
+
+.youtube-link:hover {
   transform: scale(1.2);
 }

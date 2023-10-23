@@ -1,6 +1,7 @@
 import React from "react";
 import instagramIcon from "../assets/images/instagram.svg";
 import spotifyIcon from "../assets/images/spotify.svg";
+import youtubeIcon from "../assets/images/youtube.svg";
 
 import "../styles/SocialMedia.css";
 
@@ -28,6 +29,18 @@ const SocialMedia = () => {
         <img
           src={spotifyIcon}
           alt="Spotify"
+          style={{ width: "35px", height: "35px" }}
+        />
+      </a>
+      <a
+        href="https://www.youtube.com/@nubila5910"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="youtube-link"
+      >
+        <img
+          src={youtubeIcon}
+          alt="Youtube"
           style={{ width: "35px", height: "35px" }}
         />
       </a>

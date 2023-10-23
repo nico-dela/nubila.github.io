@@ -2,9 +2,9 @@
   transition: background-color 0.5s ease; /* Cambia la duración y la función de tiempo según tus preferencias */
 }
 
-/* .heading {
+.heading {
   font-family: 'Nubifont';
   font-size: 3rem;
   margin-top: 1rem;
   text-align: center;
-} */
+}

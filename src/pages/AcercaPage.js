@@ -39,7 +39,7 @@ const AcercaPage = () => {
 
   return (
     <div className="container" style={{ backgroundColor }} id="main-container">
-      <h1 className="heading">Oceánica</h1>
+      <h1 className="heading">SENTIMIENTO OCEÁNICO</h1>
       <div>
         <YouTube
           videoId="zO1L7Grx1VQ"

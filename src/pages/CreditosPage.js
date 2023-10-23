@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import lacasaLogo from "../assets/images/lacasa-logo.png";
 import "../styles/CreditosPage.css";
 
 const CreditosPage = () => {
   return (
     <div className="container">
-      <h1 className="heading">Créditos</h1>
+      <h1 className="heading">CRÉDITOS</h1>
       <div className="credits">
         <h2>Participantes del proyecto</h2>
         <ul>
@@ -20,15 +21,13 @@ const CreditosPage = () => {
 
         <h2>Colaboradores Especiales</h2>
         <ul>
-          <li className="credit-item">Nombre del Colaborador Especial 1</li>
-          <li className="credit-item">Nombre del Colaborador Especial 2</li>
+          <li className="credit-item">Gregorio Lopez</li>
         </ul>
 
         <h2>Agradecimientos</h2>
-        <p>
-          Agradecemos a todas las personas que contribuyeron de alguna manera al
-          proyecto.
-        </p>
+        <div className="item">
+          <img src={lacasaLogo} alt="La Casa Mutante Logo" className="logo" />
+        </div>
       </div>
       <Link to="/nubila" className="link">
         <button className="button">Volver</button>

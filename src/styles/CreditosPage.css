@@ -1,9 +1,15 @@
 .credits {
-  text-align: left;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centra el contenido verticalmente */
   background-color: #f4f4f4;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  /* max-width: 800px;  */
+  /* width: 90%; */
+  /* margin: 0 auto; */
 }
 
 .credit-item {
@@ -11,4 +17,27 @@
   color: #555;
   list-style-type: square; /* Cambia el estilo de la viñeta de la lista */
   margin: 10px 0;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+  color: #8191ba;
+}
+
+.item {
+  display: flex;
+}
+
+/* Media Query para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 768px) {
+  .credits {
+    padding: 10px; /* Reduce el relleno para pantallas más pequeñas */
+    max-width: none; /* Elimina el ancho máximo */
+    width: 100%; /* Ocupa todo el ancho disponible en pantallas más pequeñas */
+  }
+
+  .credit-item {
+    font-size: 16px; /* Reduce el tamaño de fuente en pantallas más pequeñas */
+  }
 }

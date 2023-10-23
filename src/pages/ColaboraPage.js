@@ -5,7 +5,7 @@ import "../styles/ColaboraPage.css";
 const ColaboraPage = () => {
   return (
     <div className="container">
-      <h1 className="heading">Colaborá</h1>
+      <h1 className="heading">COLABORÁ</h1>
       <div className="collaborate">
         <strong>¡Gracias por asomarte!</strong>
         <p>

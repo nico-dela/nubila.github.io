@@ -9,19 +9,22 @@ const LandingPage = () => {
   useEffect(() => {
     const generateRandomButton = (link, isStrikeThrough) => {
       const screenWidth = window.innerWidth;
-      const screenHeight = window.innerHeight * 0.8;
+      const screenHeight = window.innerHeight;
 
-      const buttonWidth = 100; // Ancho del botón
-      const buttonHeight = 40; // Alto del botón
+      const buttonWidth = 250;
+      const buttonHeight = 40;
+
+      const musicPlayerHeight = 80;
 
       const randomX = Math.floor(Math.random() * (screenWidth - buttonWidth));
-      const randomY = Math.floor(Math.random() * (screenHeight - buttonHeight));
+      const randomY = Math.floor(Math.random() * (screenHeight - buttonHeight - musicPlayerHeight));
+
       const randomRotation = Math.floor(Math.random() * 2); // 0 o 1
 
       return (
         <Link
-          key={link.url} // Utilizamos la URL como clave única para evitar duplicados
-          to={`/nubila/${link.url}`} // Ruta a la que se navegará al hacer clic en el botón
+          key={link.url}
+          to={`/nubila/${link.url}`}
           style={{
             position: "absolute",
             top: randomY,
@@ -31,22 +34,23 @@ const LandingPage = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            textDecoration: isStrikeThrough ? "line-through" : "none", // Aplica tachado si es el botón seleccionado
+            textDecoration: isStrikeThrough ? "line-through" : "none",
             color: "#000",
-            transform: `rotate(${randomRotation * 90}deg)`, // Rotación aleatoria
-            transition: "transform 0.3s ease", // Transición suave
+            transform: `rotate(${randomRotation * 90}deg)`,
+            transition: "transform 0.5s ease",
             backgroundColor: "transparent",
             border: "none",
             cursor: "pointer",
             fontWeight: "bold",
-            fontFamily: "Nubifont", // Especifica la fuente de texto aquí
-            fontSize: 40,
+            fontFamily: "Nubifont",
+            fontSize: 35,
+            padding: "5px 10px", // Ajusto el espacio interno
           }}
           onMouseEnter={(e) => {
-            e.target.style.opacity = "0.5"; // Cambiar el color de fondo al hacer hover
+            e.target.style.opacity = "0.5";
           }}
           onMouseLeave={(e) => {
-            e.target.style.opacity = "1"; // Restaurar el color de fondo al dejar de hacer hover
+            e.target.style.opacity = "1";
           }}
         >
           {link.text}
@@ -55,12 +59,12 @@ const LandingPage = () => {
     };
 
     const links = [
-      { text: "Oceánica", url: "oceanica" },
-      { text: "Girasoles", url: "girasoles" },
-      { text: "Bolerito de Stapelia", url: "bolerito" },
-      { text: "Frío", url: "frio" },
-      { text: "Mariposa Origami", url: "mariposa" },
-      { text: "Limonero", url: "limonero" },
+      { text: "OCEÁNICA", url: "oceanica" },
+      { text: "GIRASOLES", url: "girasoles" },
+      { text: "BOLERITO DE STAPELIA", url: "bolerito" },
+      { text: "FRÍO", url: "frio" },
+      { text: "MARIPOSA ORIGAMI", url: "mariposa" },
+      { text: "LIMONERO", url: "limonero" },
     ];
 
     const randomIndex = Math.floor(Math.random() * (links.length + 1)); // Agrega 1 a la longitud para incluir la posibilidad de ningún botón tachado
@@ -75,7 +79,6 @@ const LandingPage = () => {
 
   const hexColors = [
     "#86B0A6",
-    "#a385cf",
     "#A6C4CF",
     "#E1CFCB",
     "#2e7b7f",
@@ -84,7 +87,7 @@ const LandingPage = () => {
   ];
 
   const randomGradient = hexColors
-    .sort(() => 0.33 - Math.random())
+    .sort(() => 0.5 - Math.random())
     .slice(0, 3)
     .join(",");
 

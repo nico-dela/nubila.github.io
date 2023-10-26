@@ -1,49 +1,39 @@
 import React from "react";
-import instagramIcon from "../assets/images/instagram.svg";
-import spotifyIcon from "../assets/images/spotify.svg";
-import youtubeIcon from "../assets/images/youtube.svg";
-
+import SocialMediaIcon from "./SocialMediaIcon";
 import "../styles/SocialMedia.css";
+
+const socialMediaLinks = [
+  {
+    name: "Instagram",
+    url: "https://www.instagram.com/nubila___/",
+    className: "instagram-link",
+  },
+  {
+    name: "Spotify",
+    url: "https://open.spotify.com/artist/6fWZzJGm1glU7LAu374FSL?si=wsUOfKliQ9613oxyqYk7NA",
+    className: "spotify-link",
+  },
+  {
+    name: "Youtube",
+    url: "https://www.youtube.com/@nubila5910",
+    className: "youtube-link",
+  },
+];
 
 const SocialMedia = () => {
   return (
     <div id="main-container">
-      <a
-        href="https://www.instagram.com/nubila___/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="instagram-link"
-      >
-        <img
-          src={instagramIcon}
-          alt="Instagram"
-          style={{ width: "35px", height: "35px" }}
-        />
-      </a>
-      <a
-        href="https://open.spotify.com/artist/6fWZzJGm1glU7LAu374FSL?si=wsUOfKliQ9613oxyqYk7NA"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="spotify-link"
-      >
-        <img
-          src={spotifyIcon}
-          alt="Spotify"
-          style={{ width: "35px", height: "35px" }}
-        />
-      </a>
-      <a
-        href="https://www.youtube.com/@nubila5910"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="youtube-link"
-      >
-        <img
-          src={youtubeIcon}
-          alt="Youtube"
-          style={{ width: "35px", height: "35px" }}
-        />
-      </a>
+      {socialMediaLinks.map((link, index) => (
+        <a
+          key={index}
+          href={link.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={`social-link ${link.className}`}
+        >
+          <SocialMediaIcon icon={link.name} />
+        </a>
+      ))}
     </div>
   );
 };

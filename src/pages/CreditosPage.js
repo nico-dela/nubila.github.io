@@ -6,7 +6,7 @@ import "../styles/CreditosPage.css";
 const CreditosPage = () => {
   return (
     <div className="container">
-      <h1 className="heading">CRÉDITOS</h1>
+      <h1 className="heading">CREDITOS</h1>
       <div className="credits">
         <h2>Participantes del proyecto</h2>
         <ul>

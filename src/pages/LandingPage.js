@@ -59,10 +59,10 @@ const LandingPage = () => {
     };
 
     const links = [
-      { text: "OCEÁNICA", url: "oceanica" },
+      { text: "OCEANICA", url: "oceanica" },
       { text: "GIRASOLES", url: "girasoles" },
       { text: "BOLERITO DE STAPELIA", url: "bolerito" },
-      { text: "FRÍO", url: "frio" },
+      { text: "FRIO", url: "frio" },
       { text: "MARIPOSA ORIGAMI", url: "mariposa" },
       { text: "LIMONERO", url: "limonero" },
     ];

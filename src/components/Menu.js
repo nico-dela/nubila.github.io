@@ -38,7 +38,7 @@ const Menu = ({ background }) => {
         </div>
         <div className="menu-item">
           <Link to="/nubila/acerca" className="menu-link" onClick={toggleMenu}>
-            SENTIMIENTO OCEÁNICO
+            SENTIMIENTO OCEANICO
           </Link>
         </div>
         <div className="menu-item">
@@ -47,7 +47,7 @@ const Menu = ({ background }) => {
             className="menu-link"
             onClick={toggleMenu}
           >
-            CRÉDITOS
+            CREDITOS
           </Link>
         </div>
         <div className="menu-item">
@@ -56,7 +56,7 @@ const Menu = ({ background }) => {
             className="menu-link"
             onClick={toggleMenu}
           >
-            COLABORÁ
+            COLABORA
           </Link>
         </div>
       </div>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nubila/static/css/main.f663bb52.css",
-    "main.js": "/nubila/static/js/main.d4667eec.js",
+    "main.css": "/nubila/static/css/main.3137b072.css",
+    "main.js": "/nubila/static/js/main.2f3a383e.js",
     "static/js/787.572a26b7.chunk.js": "/nubila/static/js/787.572a26b7.chunk.js",
     "static/media/Frio.mp3": "/nubila/static/media/Frio.838cd1554c31aa6fe1d2.mp3",
     "static/media/Girasoles.mp3": "/nubila/static/media/Girasoles.d7187a2fae4e55c92899.mp3",
@@ -12,22 +12,23 @@
     "static/media/bolerito-letra.png": "/nubila/static/media/bolerito-letra.57aa1e4eab05f50644da.png",
     "static/media/nubila-logo.png": "/nubila/static/media/nubila-logo.497ea8d64c70885dde76.png",
     "static/media/girasoles-letra.png": "/nubila/static/media/girasoles-letra.3d5417da9f4a4e07cf70.png",
+    "static/media/banner.jpeg": "/nubila/static/media/banner.68e43d3c0a7b8ec7e6a6.jpeg",
     "static/media/frio-letra.png": "/nubila/static/media/frio-letra.094270f55bf997baf5af.png",
     "static/media/limonero-letra.png": "/nubila/static/media/limonero-letra.1dcebd30eece5d8a2582.png",
     "static/media/mariposa-letra.png": "/nubila/static/media/mariposa-letra.5199627db49082a0fb4b.png",
     "static/media/oceanica-letra.png": "/nubila/static/media/oceanica-letra.354cd0faa3ee534a4a97.png",
     "static/media/lacasa-logo.png": "/nubila/static/media/lacasa-logo.22e30147af346a26676f.png",
     "static/media/Nubifont-Regular.ttf": "/nubila/static/media/Nubifont-Regular.ab8bb1406db39c713abe.ttf",
-    "static/media/instagram.svg": "/nubila/static/media/instagram.849150f40cd137617202962a2e728c4d.svg",
     "index.html": "/nubila/index.html",
+    "static/media/instagram.svg": "/nubila/static/media/instagram.849150f40cd137617202962a2e728c4d.svg",
     "static/media/spotify.svg": "/nubila/static/media/spotify.ee43100e7fc43419b0053adb32d25461.svg",
     "static/media/youtube.svg": "/nubila/static/media/youtube.03bb1fe841d60f4c3da98b59c3b31d6b.svg",
-    "main.f663bb52.css.map": "/nubila/static/css/main.f663bb52.css.map",
-    "main.d4667eec.js.map": "/nubila/static/js/main.d4667eec.js.map",
+    "main.3137b072.css.map": "/nubila/static/css/main.3137b072.css.map",
+    "main.2f3a383e.js.map": "/nubila/static/js/main.2f3a383e.js.map",
     "787.572a26b7.chunk.js.map": "/nubila/static/js/787.572a26b7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f663bb52.css",
-    "static/js/main.d4667eec.js"
+    "static/css/main.3137b072.css",
+    "static/js/main.2f3a383e.js"
   ]
 }

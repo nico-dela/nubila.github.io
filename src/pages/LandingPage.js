@@ -16,15 +16,29 @@ const LandingPage = () => {
 
       const musicPlayerHeight = 80;
 
-      const randomX = Math.floor(Math.random() * (screenWidth - buttonWidth));
-      const randomY = Math.floor(Math.random() * (screenHeight - buttonHeight - musicPlayerHeight));
+      const horizontalMargin = 50; // Puedes ajustar este valor
+      const verticalMargin = 50; // Puedes ajustar este valor
+
+      const randomX = Math.floor(
+        horizontalMargin +
+          Math.random() * (screenWidth - buttonWidth - 2 * horizontalMargin)
+      );
+
+      const randomY = Math.floor(
+        verticalMargin +
+          Math.random() *
+            (screenHeight -
+              buttonHeight -
+              musicPlayerHeight -
+              2 * verticalMargin)
+      );
 
       const randomRotation = Math.floor(Math.random() * 2); // 0 o 1
 
       return (
         <Link
           key={link.url}
-          to={`/nubila/${link.url}`}
+          to={`/${link.url}`}
           style={{
             position: "absolute",
             top: randomY,
@@ -91,27 +105,27 @@ const LandingPage = () => {
     .slice(0, 3)
     .join(",");
 
-    return (
+  return (
+    <div
+      className="landing-page"
+      style={{
+        position: "relative",
+        width: "100vw",
+        height: "100vh",
+      }}
+    >
       <div
-        className="landing-page"
+        className="background-gradient"
         style={{
-          position: "relative",
-          width: "100vw",
-          height: "100vh",
+          background: `linear-gradient(to bottom, ${randomGradient})`,
+          backgroundSize: "contain",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
-      >
-        <div
-          className="background-gradient"
-          style={{
-            background: `linear-gradient(to bottom, ${randomGradient})`,
-            backgroundSize: "contain",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-          }}
-        ></div>
-        {buttons}
-      </div>
-    );
+      ></div>
+      {buttons}
+    </div>
+  );
 };
 
 export default LandingPage;

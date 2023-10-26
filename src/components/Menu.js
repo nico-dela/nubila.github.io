@@ -27,7 +27,7 @@ const Menu = ({ background }) => {
       </button>
       <div className={`menu-dropdown ${showMenu ? "active" : ""}`}>
         <div className="menu-item">
-          <Link to="/nubila" className="menu-link" onClick={toggleMenu}>
+          <Link to="/" className="menu-link" onClick={toggleMenu}>
             <img
               src={nubilaLogo}
               alt="Nubila Logo"
@@ -37,13 +37,13 @@ const Menu = ({ background }) => {
           </Link>
         </div>
         <div className="menu-item">
-          <Link to="/nubila/acerca" className="menu-link" onClick={toggleMenu}>
+          <Link to="/acerca" className="menu-link" onClick={toggleMenu}>
             SENTIMIENTO OCEANICO
           </Link>
         </div>
         <div className="menu-item">
           <Link
-            to="/nubila/creditos"
+            to="/creditos"
             className="menu-link"
             onClick={toggleMenu}
           >
@@ -52,7 +52,7 @@ const Menu = ({ background }) => {
         </div>
         <div className="menu-item">
           <Link
-            to="/nubila/colabora"
+            to="/colabora"
             className="menu-link"
             onClick={toggleMenu}
           >

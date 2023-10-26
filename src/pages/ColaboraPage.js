@@ -29,7 +29,7 @@ const ColaboraPage = () => {
           compartiendo arte.
         </p>
       </div>
-      <Link to="/nubila" className="link">
+      <Link to="/" className="link">
         <button className="button">Volver</button>
       </Link>
     </div>

@@ -18,12 +18,13 @@ import Menu from "./components/Menu";
 import "./App.css";
 
 const App = () => {
-  const [isOffline, setIsOffline] = useState(true);
+  // const [isOffline, setIsOffline] = useState(false);
+  const [isOffline] = useState(false);
 
   useEffect(() => {
     // Agrega tu lógica para determinar si tu sitio está completo aquí.
     // Cuando tu sitio esté completo, cambia el valor de isComingSoon a `false`.
-    // setComingSoon(false);
+    // setIsOffline(false);
   }, []);
 
   return (
@@ -38,16 +39,16 @@ const App = () => {
             <Menu />
             <SocialMedia />
             <Routes>
-              <Route path="/nubila" element={<LandingPage />} />
-              <Route path="/nubila/oceanica" element={<OceanicaPage />} />
-              <Route path="/nubila/girasoles" element={<GirasolesPage />} />
-              <Route path="/nubila/bolerito" element={<BoleritoPage />} />
-              <Route path="/nubila/mariposa" element={<MariposaPage />} />
-              <Route path="/nubila/frio" element={<FrioPage />} />
-              <Route path="/nubila/limonero" element={<LimoneroPage />} />
-              <Route path="/nubila/creditos" element={<CreditosPage />} />
-              <Route path="/nubila/acerca" element={<AcercaPage />} />
-              <Route path="/nubila/colabora" element={<ColaboraPage />} />
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/oceanica" element={<OceanicaPage />} />
+              <Route path="/girasoles" element={<GirasolesPage />} />
+              <Route path="/bolerito" element={<BoleritoPage />} />
+              <Route path="/mariposa" element={<MariposaPage />} />
+              <Route path="/frio" element={<FrioPage />} />
+              <Route path="/limonero" element={<LimoneroPage />} />
+              <Route path="/creditos" element={<CreditosPage />} />
+              <Route path="/acerca" element={<AcercaPage />} />
+              <Route path="/colabora" element={<ColaboraPage />} />
             </Routes>
             <MusicPlayer />
           </>

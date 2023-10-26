@@ -29,7 +29,7 @@ const CreditosPage = () => {
           <img src={lacasaLogo} alt="La Casa Mutante Logo" className="logo" />
         </div>
       </div>
-      <Link to="/nubila" className="link">
+      <Link to="/" className="link">
         <button className="button">Volver</button>
       </Link>
     </div>

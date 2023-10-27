@@ -97,7 +97,6 @@ const LandingPage = () => {
     "#E1CFCB",
     "#2e7b7f",
     "#557B86",
-    "#EB7E83",
   ];
 
   const randomGradient = hexColors

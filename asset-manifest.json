@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.682a77e3.css",
-    "main.js": "/static/js/main.08a0570f.js",
-    "static/js/787.572a26b7.chunk.js": "/static/js/787.572a26b7.chunk.js",
+    "main.css": "/static/css/main.d619ff08.css",
+    "main.js": "/static/js/main.102163a9.js",
+    "static/js/787.2e7c9cd4.chunk.js": "/static/js/787.2e7c9cd4.chunk.js",
     "static/media/Frio.mp3": "/static/media/Frio.838cd1554c31aa6fe1d2.mp3",
     "static/media/Girasoles.mp3": "/static/media/Girasoles.d7187a2fae4e55c92899.mp3",
     "static/media/Limonero.mp3": "/static/media/Limonero.dcb947b1ac6af5099b84.mp3",
     "static/media/Bolerito de Stapelia.mp3": "/static/media/Bolerito de Stapelia.6d0022a6a65aedb1c50e.mp3",
     "static/media/Mariposa Origami.mp3": "/static/media/Mariposa Origami.83138a839a738f49b64d.mp3",
     "static/media/Oceanica.mp3": "/static/media/Oceanica.742f553d2c41d9282ee8.mp3",
+    "static/media/spinning-loading.gif": "/static/media/spinning-loading.b392466284f30fde67db.gif",
     "static/media/bolerito-letra.png": "/static/media/bolerito-letra.57aa1e4eab05f50644da.png",
     "static/media/nubila-logo.png": "/static/media/nubila-logo.497ea8d64c70885dde76.png",
     "static/media/girasoles-letra.png": "/static/media/girasoles-letra.3d5417da9f4a4e07cf70.png",
@@ -23,12 +24,12 @@
     "static/media/instagram.svg": "/static/media/instagram.849150f40cd137617202962a2e728c4d.svg",
     "static/media/spotify.svg": "/static/media/spotify.ee43100e7fc43419b0053adb32d25461.svg",
     "static/media/youtube.svg": "/static/media/youtube.03bb1fe841d60f4c3da98b59c3b31d6b.svg",
-    "main.682a77e3.css.map": "/static/css/main.682a77e3.css.map",
-    "main.08a0570f.js.map": "/static/js/main.08a0570f.js.map",
-    "787.572a26b7.chunk.js.map": "/static/js/787.572a26b7.chunk.js.map"
+    "main.d619ff08.css.map": "/static/css/main.d619ff08.css.map",
+    "main.102163a9.js.map": "/static/js/main.102163a9.js.map",
+    "787.2e7c9cd4.chunk.js.map": "/static/js/787.2e7c9cd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.682a77e3.css",
-    "static/js/main.08a0570f.js"
+    "static/css/main.d619ff08.css",
+    "static/js/main.102163a9.js"
   ]
 }

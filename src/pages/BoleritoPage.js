@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import { Transition, CSSTransition } from "react-transition-group";
 import boleritoImage from "../assets/images/bolerito-letra.png";
@@ -28,9 +27,6 @@ const BoleritoPage = () => {
               className={isExpanded ? "expanded" : ""}
               onClick={toggleExpand}
             />
-            <Link to="/" className="link">
-              <button className="button">Volver</button>
-            </Link>
           </div>
         </CSSTransition>
       )}

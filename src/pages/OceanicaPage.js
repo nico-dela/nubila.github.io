@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 
 import oceanicaImage from "../assets/images/oceanica-letra.png";
 import { Transition, CSSTransition } from "react-transition-group";
@@ -28,9 +27,6 @@ const OceanicaPage = () => {
               className={isExpanded ? "expanded" : ""}
               onClick={toggleExpand}
             />
-            <Link to="/" className="link">
-              <button className="button">Volver</button>
-            </Link>
           </div>
         </CSSTransition>
       )}

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import YouTube from "react-youtube";
 import "../styles/AcercaPage.css";
 
@@ -48,9 +47,6 @@ const AcercaPage = () => {
           onStateChange={onPlayerStateChange}
         />
       </div>
-      <Link to="/" className="link">
-        <button className="button">Volver</button>
-      </Link>
     </div>
   );
 };

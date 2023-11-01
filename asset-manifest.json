@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d619ff08.css",
-    "main.js": "/static/js/main.102163a9.js",
+    "main.css": "/static/css/main.c16423e1.css",
+    "main.js": "/static/js/main.909281ed.js",
     "static/js/787.2e7c9cd4.chunk.js": "/static/js/787.2e7c9cd4.chunk.js",
     "static/media/Frio.mp3": "/static/media/Frio.838cd1554c31aa6fe1d2.mp3",
     "static/media/Girasoles.mp3": "/static/media/Girasoles.d7187a2fae4e55c92899.mp3",
@@ -18,18 +18,18 @@
     "static/media/limonero-letra.png": "/static/media/limonero-letra.1dcebd30eece5d8a2582.png",
     "static/media/mariposa-letra.png": "/static/media/mariposa-letra.5199627db49082a0fb4b.png",
     "static/media/oceanica-letra.png": "/static/media/oceanica-letra.354cd0faa3ee534a4a97.png",
+    "static/media/social-media.png": "/static/media/social-media.377579a80a9f2ec3e789.png",
     "static/media/lacasa-logo.png": "/static/media/lacasa-logo.22e30147af346a26676f.png",
     "static/media/Nubifont-Regular.ttf": "/static/media/Nubifont-Regular.ab8bb1406db39c713abe.ttf",
     "index.html": "/index.html",
-    "static/media/instagram.svg": "/static/media/instagram.849150f40cd137617202962a2e728c4d.svg",
-    "static/media/spotify.svg": "/static/media/spotify.ee43100e7fc43419b0053adb32d25461.svg",
-    "static/media/youtube.svg": "/static/media/youtube.03bb1fe841d60f4c3da98b59c3b31d6b.svg",
-    "main.d619ff08.css.map": "/static/css/main.d619ff08.css.map",
-    "main.102163a9.js.map": "/static/js/main.102163a9.js.map",
+    "static/media/flecha-abajo.svg": "/static/media/flecha-abajo.273c91c54ac37dcc0671f99b62bcf93a.svg",
+    "static/media/flecha-arriba.svg": "/static/media/flecha-arriba.677674c6356c1ff44cc7af1514b3e880.svg",
+    "main.c16423e1.css.map": "/static/css/main.c16423e1.css.map",
+    "main.909281ed.js.map": "/static/js/main.909281ed.js.map",
     "787.2e7c9cd4.chunk.js.map": "/static/js/787.2e7c9cd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d619ff08.css",
-    "static/js/main.102163a9.js"
+    "static/css/main.c16423e1.css",
+    "static/js/main.909281ed.js"
   ]
 }

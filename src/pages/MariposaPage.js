@@ -1,16 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Transition, CSSTransition } from "react-transition-group";
 import mariposaImage from "../assets/images/mariposa-letra.png";
 import "../styles/LyricsPage.css";
 
 const MariposaPage = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
-
   return (
     <Transition in={true} timeout={300} appear={true}>
       {(status) => (
@@ -21,12 +15,7 @@ const MariposaPage = () => {
           unmountOnExit
         >
           <div className="lyrics">
-            <img
-              src={mariposaImage}
-              alt="Mariposa origami partitura"
-              className={isExpanded ? "expanded" : ""}
-              onClick={toggleExpand}
-            />
+            <img src={mariposaImage} alt="Mariposa origami partitura" />
           </div>
         </CSSTransition>
       )}

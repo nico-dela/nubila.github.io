@@ -1,16 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Transition, CSSTransition } from "react-transition-group";
 import limoneroImage from "../assets/images/limonero-letra.png";
 import "../styles/LyricsPage.css";
 
 const LimoneroPage = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
-
   return (
     <Transition in={true} timeout={300} appear={true}>
       {(status) => (
@@ -21,12 +15,7 @@ const LimoneroPage = () => {
           unmountOnExit
         >
           <div className="lyrics">
-            <img
-              src={limoneroImage}
-              alt="Limonero partitura"
-              className={isExpanded ? "expanded" : ""}
-              onClick={toggleExpand}
-            />
+            <img src={limoneroImage} alt="Limonero partitura" />
           </div>
         </CSSTransition>
       )}

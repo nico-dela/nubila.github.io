@@ -1,16 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 import oceanicaImage from "../assets/images/oceanica-letra.png";
 import { Transition, CSSTransition } from "react-transition-group";
 import "../styles/LyricsPage.css";
 
 const OceanicaPage = () => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
-  };
-
   return (
     <Transition in={true} timeout={300} appear={true}>
       {(status) => (
@@ -21,12 +15,7 @@ const OceanicaPage = () => {
           unmountOnExit
         >
           <div className="lyrics">
-            <img
-              src={oceanicaImage}
-              alt="Oceánica partitura"
-              className={isExpanded ? "expanded" : ""}
-              onClick={toggleExpand}
-            />
+            <img src={oceanicaImage} alt="Oceánica partitura" />
           </div>
         </CSSTransition>
       )}

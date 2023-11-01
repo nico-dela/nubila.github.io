@@ -63,6 +63,30 @@
   cursor: pointer;
 }
 
+.arrow-button {
+  position: absolute;
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-90%);
+  transition: transform 0.3s ease; /* Agrega la transición */
+}
+
+.arrow-button.show {
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.arrow-button:hover {
+  opacity: 0.5;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);

@@ -19,7 +19,7 @@ import "./App.css";
 
 const App = () => {
   // const [isOffline, setIsOffline] = useState(false);
-  const [isOffline] = useState(true);
+  const [isOffline] = useState(false);
 
   useEffect(() => {
     // Agrega tu lógica para determinar si tu sitio está completo aquí.

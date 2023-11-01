@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import lemonIcon from "../assets/images/lemon-logo.jpeg";
 import "../styles/ColaboraPage.css";
 
 const ColaboraPage = () => {
@@ -13,25 +13,41 @@ const ColaboraPage = () => {
           grabaciones, producciones en vivo y otras actividades que nos permiten
           seguir haciendo lo que amamos.
         </p>
-        <p>Si queres colaborar, podés hacerlo de las siguientes formas:</p>
+        <p>
+          Si te interesa colaborar con el proyecto, podés hacerlo de las
+          siguientes formas:
+        </p>
         <ul>
           <li>
-            Contribuir a nuestro proyecto a través de donaciones en línea.
+            Mediante la suscripción a nuestras{" "}
+            <a
+              href={"https://linktr.ee/nubila"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              redes
+            </a>
+            , darle "Me gusta" al contenido y/o promocionar el proyecto nos
+            ayudas un montón.
           </li>
-          <li>Asistir a nuestros conciertos y/o comprar merchandising.</li>
           <li>
-            Compartir nuestra música y promocionar el proyecto en las redes
-            sociales.
+            Transferencia bancaria, te dejamos los detalles de nuestra cuenta
+            bancaria:
+            <div className="bank-details">
+              <p>
+                <strong>Banco: </strong> Lemon Cash <img src={lemonIcon} alt="Acceso a nuestras redes" style={{width: "20px", height: "20px", borderRadius: "10px"}}/>
+              </p>
+              <p>
+                <strong>Alias: </strong> nubila.ar
+              </p>
+              <p>
+                <strong>Nombre del Titular: </strong> Nicolás de la Cruz
+              </p>
+            </div>
           </li>
         </ul>
-        <p>
-          Tu apoyo es esencial para continuar creando y
-          compartiendo arte.
-        </p>
+        <p>Tu apoyo es esencial para continuar creando y compartiendo arte.</p>
       </div>
-      <Link to="/" className="link">
-        <button className="button">Volver</button>
-      </Link>
     </div>
   );
 };

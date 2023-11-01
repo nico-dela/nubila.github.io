@@ -1,25 +1,19 @@
-.social-link {
+.social-container {
+  display: flex;
+  justify-content: flex-end; /* Alinea el contenido al extremo derecho */
+  align-items: flex-start; /* Alinea el contenido en la parte superior */
   position: absolute;
   z-index: 9999;
   top: 16px;
+  right: 10px;
   transition: transform 0.2s ease;
-  text-decoration: none;
-  right: 90px; /* Ajusta el valor para la posición correcta en la primera red social */
 }
 
 .social-link:hover {
   transform: scale(1.2);
 }
 
-/* Puedes añadir estilos específicos para cada red social aquí si es necesario */
-.social-link.instagram-link {
-  right: 90px;
-}
-
-.social-link.spotify-link {
-  right: 50px;
-}
-
-.social-link.youtube-link {
-  right: 10px;
+.social-link img {
+  width: 40px;
+  height: 40px;
 }

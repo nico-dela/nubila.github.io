@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import OceanicaPage from "./pages/OceanicaPage";
@@ -18,14 +18,7 @@ import Menu from "./components/Menu";
 import "./App.css";
 
 const App = () => {
-  // const [isOffline, setIsOffline] = useState(false);
-  const [isOffline] = useState(false);
-
-  useEffect(() => {
-    // Agrega tu lógica para determinar si tu sitio está completo aquí.
-    // Cuando tu sitio esté completo, cambia el valor de isComingSoon a `false`.
-    // setIsOffline(false);
-  }, []);
+  const [isOffline] = useState(true);
 
   return (
     <Router>

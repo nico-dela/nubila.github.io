@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c16423e1.css",
-    "main.js": "/static/js/main.e70f6884.js",
+    "main.js": "/static/js/main.948ffd2f.js",
     "static/js/787.2e7c9cd4.chunk.js": "/static/js/787.2e7c9cd4.chunk.js",
     "static/media/Frio.mp3": "/static/media/Frio.838cd1554c31aa6fe1d2.mp3",
     "static/media/Girasoles.mp3": "/static/media/Girasoles.d7187a2fae4e55c92899.mp3",
@@ -9,7 +9,6 @@
     "static/media/Bolerito de Stapelia.mp3": "/static/media/Bolerito de Stapelia.6d0022a6a65aedb1c50e.mp3",
     "static/media/Mariposa Origami.mp3": "/static/media/Mariposa Origami.83138a839a738f49b64d.mp3",
     "static/media/Oceanica.mp3": "/static/media/Oceanica.742f553d2c41d9282ee8.mp3",
-    "static/media/spinning-loading.gif": "/static/media/spinning-loading.b392466284f30fde67db.gif",
     "static/media/bolerito-letra.png": "/static/media/bolerito-letra.57aa1e4eab05f50644da.png",
     "static/media/nubila-logo.png": "/static/media/nubila-logo.497ea8d64c70885dde76.png",
     "static/media/girasoles-letra.png": "/static/media/girasoles-letra.3d5417da9f4a4e07cf70.png",
@@ -25,11 +24,11 @@
     "static/media/flecha-abajo.svg": "/static/media/flecha-abajo.273c91c54ac37dcc0671f99b62bcf93a.svg",
     "static/media/flecha-arriba.svg": "/static/media/flecha-arriba.677674c6356c1ff44cc7af1514b3e880.svg",
     "main.c16423e1.css.map": "/static/css/main.c16423e1.css.map",
-    "main.e70f6884.js.map": "/static/js/main.e70f6884.js.map",
+    "main.948ffd2f.js.map": "/static/js/main.948ffd2f.js.map",
     "787.2e7c9cd4.chunk.js.map": "/static/js/787.2e7c9cd4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c16423e1.css",
-    "static/js/main.e70f6884.js"
+    "static/js/main.948ffd2f.js"
   ]
 }

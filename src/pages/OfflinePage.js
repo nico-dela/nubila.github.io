@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import bannerImage from "../assets/images/banner.jpeg";
 import { Puff } from "react-loader-spinner";
 import "../styles/OfflinePage.css";
@@ -12,7 +12,6 @@ const OfflinePage = () => {
     setImageLoaded(true);
   };
 
-  // Utiliza useEffect para verificar si la imagen ya está en caché y establecer imageLoaded en true
   useEffect(() => {
     const image = new Image();
     image.src = bannerImage;
@@ -35,7 +34,7 @@ const OfflinePage = () => {
             height={80}
             width={80}
             radius={1}
-            color="black"
+            color="#0A4066"
             ariaLabel="puff-loading"
             visible={!imageLoaded} // Oculta el spinner cuando la imagen se carga
           />

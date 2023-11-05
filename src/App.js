@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import OceanicaPage from "./pages/OceanicaPage";
 import GirasolesPage from "./pages/GirasolesPage";
@@ -21,7 +21,7 @@ const App = () => {
   const [isOffline] = useState(true);
 
   return (
-    <Router>
+    <Router baseline="/nubila">
       <div className="container">
         {isOffline ? (
           <Routes>

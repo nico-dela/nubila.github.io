@@ -18,7 +18,7 @@ import Menu from "./components/Menu";
 import "./App.css";
 
 const App = () => {
-  const [isOffline] = useState(true);
+  const [isOffline] = useState(false);
 
   return (
     <Router baseline="/nubila">

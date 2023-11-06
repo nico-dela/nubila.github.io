@@ -12,7 +12,7 @@ import CreditosPage from "./pages/CreditosPage";
 import ColaboraPage from "./pages/ColaboraPage";
 import OfflinePage from "./pages/OfflinePage";
 import MusicPlayer from "./components/MusicPlayer";
-import SocialMedia from "./components/SocialMedia";
+import NotFoundPage from "./pages/NotFoundPage";
 import Menu from "./components/Menu";
 
 import "./App.css";
@@ -30,7 +30,6 @@ const App = () => {
         ) : (
           <>
             <Menu />
-            <SocialMedia />
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/oceanica" element={<OceanicaPage />} />
@@ -42,6 +41,7 @@ const App = () => {
               <Route path="/creditos" element={<CreditosPage />} />
               <Route path="/acerca" element={<AcercaPage />} />
               <Route path="/colabora" element={<ColaboraPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <MusicPlayer />
           </>

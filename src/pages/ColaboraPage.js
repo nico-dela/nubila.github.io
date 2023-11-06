@@ -1,6 +1,8 @@
 import React from "react";
 import lemonIcon from "../assets/images/lemon-logo.jpeg";
+import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/ColaboraPage.css";
+import { Link } from "react-router-dom";
 
 const ColaboraPage = () => {
   return (
@@ -35,7 +37,16 @@ const ColaboraPage = () => {
             bancaria:
             <div className="bank-details">
               <p>
-                <strong>Banco: </strong> Lemon Cash <img src={lemonIcon} alt="Acceso a nuestras redes" style={{width: "20px", height: "20px", borderRadius: "10px"}}/>
+                <strong>Banco: </strong> Lemon Cash{" "}
+                <img
+                  src={lemonIcon}
+                  alt="Acceso a nuestras redes"
+                  style={{
+                    width: "20px",
+                    height: "20px",
+                    borderRadius: "10px",
+                  }}
+                />
               </p>
               <p>
                 <strong>Alias: </strong> nubila.ar
@@ -48,6 +59,9 @@ const ColaboraPage = () => {
         </ul>
         <p>Tu apoyo es esencial para continuar creando y compartiendo arte.</p>
       </div>
+      <Link to="/" className="back-to-home-link">
+        <img src={volverImage} alt="Volver" />
+      </Link>
     </div>
   );
 };

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import YouTube from "react-youtube";
+import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/AcercaPage.css";
+import { Link } from "react-router-dom";
 
 const AcercaPage = () => {
   const screenWidth = window.innerWidth;
@@ -12,7 +14,7 @@ const AcercaPage = () => {
     height: screenHeight * 0.7,
     width: screenWidth,
     playerVars: {
-      autoplay: 1,
+      autoplay: 0,
     },
   };
 
@@ -24,7 +26,7 @@ const AcercaPage = () => {
   };
 
   const onPlayerReady = (event) => {
-    event.target.playVideo();
+    // event.target.playVideo();
   };
 
   const onPlayerStateChange = (event) => {
@@ -47,6 +49,19 @@ const AcercaPage = () => {
           onStateChange={onPlayerStateChange}
         />
       </div>
+      <div className="button-container">
+        <Link to="/" className="back-to-home-link">
+          <img src={volverImage} alt="Volver" />
+        </Link>
+      </div>
+      <a
+        href="https://linktr.ee/nubila"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="link-tree-link"
+      >
+        Accede a nuestras redes
+      </a>
     </div>
   );
 };

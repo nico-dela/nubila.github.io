@@ -1,6 +1,8 @@
 import React from "react";
 import lacasaLogo from "../assets/images/lacasa-logo.png";
+import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/CreditosPage.css";
+import { Link } from "react-router-dom";
 
 const CreditosPage = () => {
   return (
@@ -59,6 +61,9 @@ const CreditosPage = () => {
           </a>
         </div>
       </div>
+      <Link to="/" className="back-to-home-link">
+        <img src={volverImage} alt="Volver" />
+      </Link>
     </div>
   );
 };

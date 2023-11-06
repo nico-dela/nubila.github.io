@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SocialMedia from "../components/SocialMedia";
 import { Link } from "react-router-dom";
 
 import "../styles/LandingPage.css";
@@ -97,10 +98,11 @@ const LandingPage = () => {
     "#E1CFCB",
     "#2e7b7f",
     "#557B86",
+    "#EB7E83",
   ];
 
   const randomGradient = hexColors
-    .sort(() => 0.5 - Math.random())
+    .sort(() => 0.33 - Math.random())
     .slice(0, 3)
     .join(",");
 
@@ -123,6 +125,7 @@ const LandingPage = () => {
         }}
       ></div>
       {buttons}
+      <SocialMedia />
     </div>
   );
 };

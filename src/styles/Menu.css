@@ -71,8 +71,9 @@
 }
 
 .menu-logo {
-  max-width: 150px; 
-  max-height: 150px;
+  max-width: 200px; 
+  max-height: 200px;
+  padding: 20px;
   display: block;
   margin: 0 auto;
   color: #8191ba;

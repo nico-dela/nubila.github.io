@@ -5,8 +5,6 @@ import {
   MdSkipNext,
   MdSkipPrevious,
 } from "react-icons/md";
-import flechaArriba from "../assets/images/flecha-arriba.svg";
-import flechaAbajo from "../assets/images/flecha-abajo.svg";
 import "../styles/MusicPlayer.css";
 
 import BoleritoStapelia from "../assets/music/Bolerito de Stapelia.mp3";
@@ -23,7 +21,6 @@ const MusicPlayer = () => {
   const [currentSong, setCurrentSong] = useState({});
   const [progress, setProgress] = useState(0);
   const [isSeeking, setIsSeeking] = useState(false);
-  const [isPlayerVisible, setIsPlayerVisible] = useState(false);
 
   const songs = useMemo(
     () => [
@@ -88,57 +85,34 @@ const MusicPlayer = () => {
     handleNextSong();
   };
 
-  const togglePlayerVisibility = () => {
-    setIsPlayerVisible(!isPlayerVisible);
-  };
-
   return (
     <div className="music-player-container">
-      <button
-        className={`arrow-button ${!isPlayerVisible ? "show" : "hide"}`}
-        onClick={togglePlayerVisibility}
-      >
-        {!isPlayerVisible ? (
-          <img
-            src={flechaArriba}
-            alt="Mostrar reproductor"
-            style={{ width: "20px", height: "20px" }}
+      <div className="music-player">
+        <div className="song-info">
+          <div className="song-title">{currentSong.title}</div>
+          <input
+            type="range"
+            className="progress-bar"
+            value={progress}
+            max="100"
+            onChange={handleSeek}
+            onMouseDown={handleSeekStart}
+            onMouseUp={handleSeekEnd}
           />
-        ) : (
-          <img
-            src={flechaAbajo}
-            alt="Ocultar reproductor"
-            style={{ width: "20px", height: "20px" }}
-          />
-        )}
-      </button>
-      {isPlayerVisible && (
-        <div className="music-player">
-          <div className="song-info">
-            <div className="song-title">{currentSong.title}</div>
-            <input
-              type="range"
-              className="progress-bar"
-              value={progress}
-              max="100"
-              onChange={handleSeek}
-              onMouseDown={handleSeekStart}
-              onMouseUp={handleSeekEnd}
-            />
-          </div>
-          <div className="controls">
-            <button onClick={handlePreviousSong}>
-              <MdSkipPrevious />
-            </button>
-            <button onClick={handlePlayPause}>
-              {isPlaying ? <MdPause /> : <MdPlayArrow />}
-            </button>
-            <button onClick={handleNextSong}>
-              <MdSkipNext />
-            </button>
-          </div>
         </div>
-      )}
+        <div className="controls">
+          <button onClick={handlePreviousSong}>
+            <MdSkipPrevious />
+          </button>
+          <button onClick={handlePlayPause}>
+            {isPlaying ? <MdPause /> : <MdPlayArrow />}
+          </button>
+          <button onClick={handleNextSong}>
+            <MdSkipNext />
+          </button>
+        </div>
+      </div>
+
       <audio
         ref={audioRef}
         autoPlay={isPlaying}

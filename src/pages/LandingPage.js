@@ -1,8 +1,23 @@
 import React, { useEffect, useState } from "react";
 import SocialMedia from "../components/SocialMedia";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 import "../styles/LandingPage.css";
+
+const buttonVariants = {
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const LandingPage = () => {
   const [buttons, setButtons] = useState([]);
@@ -37,39 +52,47 @@ const LandingPage = () => {
       const randomRotation = Math.floor(Math.random() * 2); // 0 o 1
 
       return (
-        <Link
+        <motion.div
           key={link.url}
-          to={`/${link.url}`}
-          style={{
-            position: "absolute",
-            top: randomY,
-            left: randomX,
-            width: buttonWidth,
-            height: buttonHeight,
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            textDecoration: isStrikeThrough ? "line-through" : "none",
-            color: "#000",
-            transform: `rotate(${randomRotation * 90}deg)`,
-            transition: "transform 0.5s ease",
-            backgroundColor: "transparent",
-            border: "none",
-            cursor: "pointer",
-            fontWeight: "bold",
-            fontFamily: "Nubifont",
-            fontSize: 35,
-            padding: "5px 10px", // Ajusto el espacio interno
-          }}
-          onMouseEnter={(e) => {
-            e.target.style.opacity = "0.5";
-          }}
-          onMouseLeave={(e) => {
-            e.target.style.opacity = "1";
-          }}
+          initial="initial"
+          animate="animate"
+          whileHover="hover"
+          variants={buttonVariants}
         >
-          {link.text}
-        </Link>
+          <Link
+            key={link.url}
+            to={`/${link.url}`}
+            style={{
+              position: "absolute",
+              top: randomY,
+              left: randomX,
+              width: buttonWidth,
+              height: buttonHeight,
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              textDecoration: isStrikeThrough ? "line-through" : "none",
+              color: "#000",
+              transform: `rotate(${randomRotation * 90}deg)`,
+              transition: "transform 0.5s ease",
+              backgroundColor: "transparent",
+              border: "none",
+              cursor: "pointer",
+              fontWeight: "bold",
+              fontFamily: "Nubifont",
+              fontSize: 35,
+              padding: "5px 10px", // Ajusto el espacio interno
+            }}
+            onMouseEnter={(e) => {
+              e.target.style.opacity = "0.5";
+            }}
+            onMouseLeave={(e) => {
+              e.target.style.opacity = "1";
+            }}
+          >
+            {link.text}
+          </Link>
+        </motion.div>
       );
     };
 
@@ -102,7 +125,7 @@ const LandingPage = () => {
   ];
 
   const randomGradient = hexColors
-    .sort(() => 0.33 - Math.random())
+    .sort(() => 0.5 - Math.random())
     .slice(0, 3)
     .join(",");
 

@@ -8,8 +8,8 @@ const NotFound = () => {
       <h1 className="not-found-heading">Ups!</h1>
       <p className="not-found-message">
         Parece que te has perdido. La página que buscas no existe. ¿Por
-        qué no volves a nuestro{" "}
-        <Link to="/" className="volver-button" style={{fontFamily: 'Nubifont', fontWeight: 'bold'}}>
+        qué no volves al{" "}
+        <Link to="/" className="volver-button" style={{fontFamily: 'Nubifont', fontWeight: 'bold', fontSize: '30px'}}>
           inicio
         </Link>
         ?

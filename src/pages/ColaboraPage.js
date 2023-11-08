@@ -93,7 +93,11 @@ const ColaboraPage = () => {
         </ul>
         <p>Tu apoyo es esencial para continuar creando y compartiendo arte.</p>
       </motion.div>
-      <motion.div className="back-to-home-link" variants={sectionVariants}>
+      <motion.div
+        className="back-to-home-link"
+        initial="initial"
+        animate="animate"
+      >
         <Link to="/">
           <img src={volverImage} alt="Volver" />
         </Link>

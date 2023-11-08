@@ -19,26 +19,16 @@ const pageVariants = {
   },
 };
 
-const titleVariants = {
+const sectionVariants = {
   initial: {
-    y: -100,
+    opacity: 0,
+    y: -30,
   },
   animate: {
+    opacity: 1,
     y: 0,
     transition: {
-      duration: 1,
-    },
-  },
-};
-
-const buttonVariants = {
-  initial: {
-    scale: 0,
-  },
-  animate: {
-    scale: 1,
-    transition: {
-      duration: 1,
+      duration: 0.5,
     },
   },
 };
@@ -64,10 +54,6 @@ const AcercaPage = () => {
     }
   };
 
-  const onPlayerReady = (event) => {
-    // event.target.playVideo();
-  };
-
   const onPlayerStateChange = (event) => {
     if (event.data === window.YT.PlayerState.PLAYING) {
       setBackgroundColor("rgb(65, 65, 65)");
@@ -86,29 +72,20 @@ const AcercaPage = () => {
       initial="initial"
       animate="animate"
     >
-      <motion.h1
-        className="heading"
-        variants={titleVariants}
-        initial="initial"
-        animate="animate"
-      >
-        SENTIMIENTO OCEANICO
-      </motion.h1>
-      <motion.div>
+      <h1 className="heading">SENTIMIENTO OCEANICO</h1>
+      <motion.div variants={sectionVariants}>
         <YouTube
           videoId="zO1L7Grx1VQ"
           opts={opts}
-          onReady={onPlayerReady}
           onStateChange={onPlayerStateChange}
         />
       </motion.div>
       <motion.div
-        className="button-container"
-        variants={buttonVariants}
+        className="back-to-home-link"
         initial="initial"
         animate="animate"
       >
-        <Link to="/" className="back-to-home-link">
+        <Link to="/">
           <img src={volverImage} alt="Volver" />
         </Link>
       </motion.div>

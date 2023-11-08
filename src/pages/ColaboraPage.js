@@ -1,14 +1,48 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import lemonIcon from "../assets/images/lemon-logo.jpeg";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/ColaboraPage.css";
-import { Link } from "react-router-dom";
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: -50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const sectionVariants = {
+  initial: {
+    opacity: 0,
+    y: -30,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
 
 const ColaboraPage = () => {
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+    >
       <h1 className="heading">COLABORA</h1>
-      <div className="collaborate">
+      <motion.div className="collaborate" variants={sectionVariants}>
         <strong>¡Gracias por asomarte!</strong>
         <p>
           Cada contribución, grande o pequeña, nos ayuda a financiar
@@ -58,11 +92,13 @@ const ColaboraPage = () => {
           </li>
         </ul>
         <p>Tu apoyo es esencial para continuar creando y compartiendo arte.</p>
-      </div>
-      <Link to="/" className="back-to-home-link">
-        <img src={volverImage} alt="Volver" />
-      </Link>
-    </div>
+      </motion.div>
+      <motion.div className="back-to-home-link" variants={sectionVariants}>
+        <Link to="/">
+          <img src={volverImage} alt="Volver" />
+        </Link>
+      </motion.div>
+    </motion.div>
   );
 };
 

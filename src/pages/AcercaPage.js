@@ -3,6 +3,45 @@ import YouTube from "react-youtube";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/AcercaPage.css";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: -50,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
+};
+
+const titleVariants = {
+  initial: {
+    y: -100,
+  },
+  animate: {
+    y: 0,
+    transition: {
+      duration: 1,
+    },
+  },
+};
+
+const buttonVariants = {
+  initial: {
+    scale: 0,
+  },
+  animate: {
+    scale: 1,
+    transition: {
+      duration: 1,
+    },
+  },
+};
 
 const AcercaPage = () => {
   const screenWidth = window.innerWidth;
@@ -39,30 +78,41 @@ const AcercaPage = () => {
   };
 
   return (
-    <div className="container" style={{ backgroundColor }} id="main-container">
-      <h1 className="heading">SENTIMIENTO OCEANICO</h1>
-      <div>
+    <motion.div
+      className="container"
+      style={{ backgroundColor }}
+      id="main-container"
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+    >
+      <motion.h1
+        className="heading"
+        variants={titleVariants}
+        initial="initial"
+        animate="animate"
+      >
+        SENTIMIENTO OCEANICO
+      </motion.h1>
+      <motion.div>
         <YouTube
           videoId="zO1L7Grx1VQ"
           opts={opts}
           onReady={onPlayerReady}
           onStateChange={onPlayerStateChange}
         />
-      </div>
-      <div className="button-container">
+      </motion.div>
+      <motion.div
+        className="button-container"
+        variants={buttonVariants}
+        initial="initial"
+        animate="animate"
+      >
         <Link to="/" className="back-to-home-link">
           <img src={volverImage} alt="Volver" />
         </Link>
-      </div>
-      <a
-        href="https://linktr.ee/nubila"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="link-tree-link"
-      >
-        Accede a nuestras redes
-      </a>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

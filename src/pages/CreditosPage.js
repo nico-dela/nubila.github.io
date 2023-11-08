@@ -769,25 +769,27 @@ const CreditosPage = () => {
                 </a>
               </li>
             </ul>{" "}
+            <a
+              href={
+                "https://www.instagram.com/la.casa.mutante/?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw=="
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={lacasaLogo}
+                alt="La Casa Mutante Logo"
+                className="logo"
+              />
+            </a>
           </div>
         </div>
-
-        <br></br>
-        <br></br>
-
-        <div className="credit">
-          <a
-            href={
-              "https://www.instagram.com/la.casa.mutante/?utm_source=ig_web_button_share_sheet&igshid=ZDNlZDc0MzIxNw=="
-            }
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={lacasaLogo} alt="La Casa Mutante Logo" className="logo" />
-          </a>
-        </div>
       </motion.div>
-      <motion.div className="back-to-home-link" variants={sectionVariants}>
+      <motion.div
+        className="back-to-home-link"
+        initial="initial"
+        animate="animate"
+      >
         <Link to="/">
           <img src={volverImage} alt="Volver" />
         </Link>

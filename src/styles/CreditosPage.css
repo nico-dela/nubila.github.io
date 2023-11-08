@@ -9,10 +9,12 @@
   padding: 15px;
   overflow-y: auto;
   height: 70vh;
+  width: 80vw;
 
   @media (max-width: 768px) {
     padding: 10px;
     font-size: 16px;
+    width: 90vw; /* Reduzco el ancho del contenedor en dispositivos móviles */
   }
 }
 
@@ -25,12 +27,32 @@
   }
 }
 
+.tc-credit-container {
+  display: flex;
+  flex-direction: row; /* Cambio el diseño a columna en dispositivos móviles */
+}
+
+@media (max-width: 768px) {
+  .tc-credit-container {
+    flex-direction: column; /* En la versión móvil, cambiar a una columna */
+  }
+}
+
+.tc-credit {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px;
+  font-size: 22px;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
 .logo {
   height: 200px;
   width: 200px;
-
-  @media (max-width: 768px) {
-    height: 100px;
-    width: 100px;
-  }
 }

@@ -27,13 +27,11 @@ const LandingPage = () => {
       const screenWidth = window.innerWidth;
       const screenHeight = window.innerHeight;
 
-      const buttonWidth = 250;
+      const buttonWidth = 110;
       const buttonHeight = 40;
 
-      const musicPlayerHeight = 80;
-
-      const horizontalMargin = 50; // Puedes ajustar este valor
-      const verticalMargin = 50; // Puedes ajustar este valor
+      const horizontalMargin = 70; 
+      const verticalMargin = 70;
 
       const randomX = Math.floor(
         horizontalMargin +
@@ -45,7 +43,6 @@ const LandingPage = () => {
           Math.random() *
             (screenHeight -
               buttonHeight -
-              musicPlayerHeight -
               2 * verticalMargin)
       );
 

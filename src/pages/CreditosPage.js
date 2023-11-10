@@ -119,6 +119,8 @@ const CreditosPage = () => {
             Candela Gencarelli
           </a>
           ,{" "}
+        </div>
+        <div className="credit">
           <a
             href="https://www.instagram.com/mucho.gregre/"
             target="_blank"
@@ -186,7 +188,7 @@ const CreditosPage = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Emilia Dipascuale
+            Emilia Di Pasquale
           </a>
           ,{" "}
           <a
@@ -298,8 +300,9 @@ const CreditosPage = () => {
           >
             HOME KONG Studio
           </a>
-          <br></br>
-          <br></br>
+        </div>
+
+        <div className="credit">
           <a
             href={"https://www.instagram.com/surlumina/"}
             target="_blank"
@@ -443,7 +446,7 @@ const CreditosPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  El viejo
+                  El Gregorio, el viejo
                 </a>
               </li>
               <li>
@@ -452,7 +455,7 @@ const CreditosPage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Emi Di Pascuali
+                  Emi Di Pasquale
                 </a>
               </li>
               <li>

@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import YouTube from "react-youtube";
+import React from "react";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/AcercaPage.css";
 import { Link } from "react-router-dom";
@@ -34,51 +33,80 @@ const sectionVariants = {
 };
 
 const AcercaPage = () => {
-  const screenWidth = window.innerWidth;
-  const screenHeight = window.innerHeight;
-
-  const [backgroundColor, setBackgroundColor] = useState("");
-
-  const opts = {
-    height: screenHeight * 0.7,
-    width: screenWidth,
-    playerVars: {
-      autoplay: 0,
-    },
-  };
-
-  const pauseMusic = () => {
-    const audioRef = document.querySelector("audio");
-    if (audioRef && !audioRef.paused) {
-      audioRef.pause();
-    }
-  };
-
-  const onPlayerStateChange = (event) => {
-    if (event.data === window.YT.PlayerState.PLAYING) {
-      setBackgroundColor("rgb(65, 65, 65)");
-      pauseMusic();
-    } else {
-      setBackgroundColor("");
-    }
-  };
-
   return (
     <motion.div
       className="container"
-      style={{ backgroundColor }}
-      id="main-container"
       variants={pageVariants}
       initial="initial"
       animate="animate"
     >
-      <h1 className="heading">SENTIMIENTO OCEANICO</h1>
-      <motion.div variants={sectionVariants}>
-        <YouTube
-          videoId="zO1L7Grx1VQ"
-          opts={opts}
-          onStateChange={onPlayerStateChange}
-        />
+      <h1 className="heading">UN CD-WEB</h1>
+      <motion.div className="collaborate" variants={sectionVariants}>
+        <p>
+          Un rincón digital el cual se centra menos en la obra resultante y más
+          en el proceso, el cuidado y la artesanía necesarios para llegar allí.
+        </p>
+        <strong>¿Que ideas seguimos?</strong>
+        <ol>
+          <li>
+            Hacer un{" "}
+            <a
+              href="https://joelhooks.com/digital-garden"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              jardín digital
+            </a>
+          </li>
+          <li>Elaborar una obra en varios lenguajes artisticos</li>
+          <li>
+            La cultura es de{" "}
+            <a
+              href="https://archive.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              dominio público
+            </a>
+          </li>
+        </ol>
+        <strong>¿Que decisiones tomamos?</strong>
+        <ul>
+          <li>
+            Publicar nuestra musica en{" "}
+            <a
+              href={"https://bandcamp.com/"}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Bandcamp
+            </a>{" "}
+            y esperar la apertura de la distribuidora nacional{" "}
+            <a
+              href={
+                "https://www.argentina.gob.ar/noticias/grupos-y-solistas-de-musica-podran-subir-sus-canciones-gratis-todas-las-plataformas-de"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              AMA
+            </a>
+          </li>
+          <li>Traducir el universo de la canción en lenguaje gráfico</li>
+          <li>
+            Crear nuestra tipografía (
+            <a
+              href={
+                "https://drive.google.com/file/d/1TVzVx5IURQCXLEIOxYM6mBDrkLuyXAgg/view?usp=sharing"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Acá
+            </a>{" "}
+            la podés descargar)
+          </li>
+        </ul>
       </motion.div>
       <motion.div
         className="back-to-home-link"

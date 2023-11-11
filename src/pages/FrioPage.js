@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion"; // Importa motion de Framer Motion
-import fríoImage from "../assets/images/frio-letra.png";
+import frioHorizontalImage from "../assets/images/frio-midi-horizontal.jpeg";
+import frioVerticalImage from "../assets/images/frio-midi-vertical.jpeg";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/LyricsPage.css";
 import { Link } from "react-router-dom";
@@ -30,6 +31,22 @@ const linkVariants = {
 };
 
 const FrioPage = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const fríoImage = isMobile ? frioVerticalImage : frioHorizontalImage;
+
   return (
     <div className="lyrics">
       <motion.div
@@ -40,6 +57,13 @@ const FrioPage = () => {
       >
         <img src={fríoImage} alt="Frío partitura" />
       </motion.div>
+      {/* <a
+        href={"https://drive.google.com/drive/my-drive"}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Descarga la letra y los acordes de la canción
+      </a> */}
       <motion.div
         className="back-to-home-link"
         variants={linkVariants} // Aplica las variantes del enlace

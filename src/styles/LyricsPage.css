@@ -16,7 +16,7 @@
   width: 40px;
 }
 
-.back-to-home-link:hover {
+.back-to-home-link:hover img {
   opacity: 0.5;
 }
 

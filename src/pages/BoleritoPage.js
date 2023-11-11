@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import boleritoHorizontalImage from "../assets/images/bolerito-midi-horizontal.jpeg";
 import boleritoVerticalImage from "../assets/images/bolerito-midi-vertical.jpeg";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
 import "../styles/LyricsPage.css";
+import { Puff } from "react-loader-spinner";
 
 const imageVariants = {
   initial: {
@@ -13,7 +14,7 @@ const imageVariants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 0.3, // Duración de la animación
+      duration: 0.3,
     },
   },
 };
@@ -25,13 +26,14 @@ const linkVariants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 0.3, // Duración de la animación
+      duration: 0.3,
     },
   },
 };
 
 const BoleritoPage = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -45,28 +47,49 @@ const BoleritoPage = () => {
     };
   }, []);
 
-  const boleritoImage = isMobile ? boleritoVerticalImage : boleritoHorizontalImage;
+  const boleritoImage = isMobile
+    ? boleritoVerticalImage
+    : boleritoHorizontalImage;
+
+  useEffect(() => {
+    const imageLoader = new Image();
+    imageLoader.src = boleritoImage;
+    imageLoader.onload = () => {
+      setLoading(false);
+    };
+  }, [boleritoImage]);
 
   return (
     <div className="lyrics">
-      <motion.div
-        className="image-container"
-        variants={imageVariants} // Aplica las variantes de la imagen
-        initial="initial"
-        animate="animate"
+      <Suspense
+        fallback={
+          <div className="loading-container">
+            {loading && (
+              <Puff
+                height={80}
+                width={80}
+                radius={1}
+                color="#0A4066"
+                ariaLabel="puff-loading"
+              />
+            )}
+          </div>
+        }
       >
-        <img src={boleritoImage} alt="Bolerito de Stapelia partitura" />
-      </motion.div>
-      {/* <a
-        href={"https://drive.google.com/drive/my-drive"}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Descarga la letra y los acordes de la canción
-      </a> */}
+        <motion.div
+          className="image-container"
+          variants={imageVariants} // Utiliza imageVariants aquí
+          initial="initial"
+          animate="animate"
+        >
+          {!loading && (
+            <img src={boleritoImage} alt="Bolerito de Stapelia partitura" />
+          )}
+        </motion.div>
+      </Suspense>
       <motion.div
         className="back-to-home-link"
-        variants={linkVariants} // Aplica las variantes del enlace
+        variants={linkVariants}
         initial="initial"
         animate="animate"
       >

@@ -7,7 +7,7 @@ import BoleritoPage from "./pages/BoleritoPage";
 import MariposaPage from "./pages/MariposaPage";
 import FrioPage from "./pages/FrioPage";
 import LimoneroPage from "./pages/LimoneroPage";
-import AcercaPage from "./pages/AcercaPage";
+import SentimientoPage from "./pages/SentimientoPage";
 import CreditosPage from "./pages/CreditosPage";
 import ColaboraPage from "./pages/ColaboraPage";
 import OfflinePage from "./pages/OfflinePage";
@@ -16,9 +16,10 @@ import NotFoundPage from "./pages/NotFoundPage";
 import Menu from "./components/Menu";
 
 import "./App.css";
+import AcercaPage from "./pages/AcercaPage";
 
 const App = () => {
-  const [isOffline] = useState(true);
+  const [isOffline] = useState(false);
 
   return (
     <Router baseline="/nubila">
@@ -39,8 +40,9 @@ const App = () => {
               <Route path="/frio" element={<FrioPage />} />
               <Route path="/limonero" element={<LimoneroPage />} />
               <Route path="/creditos" element={<CreditosPage />} />
-              <Route path="/acerca" element={<AcercaPage />} />
+              <Route path="/sentimiento" element={<SentimientoPage />} />
               <Route path="/colabora" element={<ColaboraPage />} />
+              <Route path="/acerca" element={<AcercaPage />} />
               <Route path="*" element={<NotFoundPage />} />
             </Routes>
             <MusicPlayer />

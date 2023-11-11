@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d17aa386.css",
-    "main.js": "/static/js/main.309d504b.js",
+    "main.css": "/static/css/main.685f12b6.css",
+    "main.js": "/static/js/main.6f6617e6.js",
     "static/js/787.2e7c9cd4.chunk.js": "/static/js/787.2e7c9cd4.chunk.js",
     "static/media/Frio.mp3": "/static/media/Frio.838cd1554c31aa6fe1d2.mp3",
     "static/media/Girasoles.mp3": "/static/media/Girasoles.d7187a2fae4e55c92899.mp3",
@@ -9,24 +9,30 @@
     "static/media/Bolerito de Stapelia.mp3": "/static/media/Bolerito de Stapelia.6d0022a6a65aedb1c50e.mp3",
     "static/media/Mariposa Origami.mp3": "/static/media/Mariposa Origami.83138a839a738f49b64d.mp3",
     "static/media/Oceanica.mp3": "/static/media/Oceanica.742f553d2c41d9282ee8.mp3",
-    "static/media/bolerito-letra.png": "/static/media/bolerito-letra.57aa1e4eab05f50644da.png",
-    "static/media/girasoles-letra.png": "/static/media/girasoles-letra.3d5417da9f4a4e07cf70.png",
+    "static/media/girasoles-midi-vertical.jpeg": "/static/media/girasoles-midi-vertical.bfd99b8cf696345be7fb.jpeg",
+    "static/media/girasoles-midi-horizontal.jpeg": "/static/media/girasoles-midi-horizontal.dec119a5252d62b99bae.jpeg",
     "static/media/banner.jpeg": "/static/media/banner.68e43d3c0a7b8ec7e6a6.jpeg",
-    "static/media/frio-letra.png": "/static/media/frio-letra.094270f55bf997baf5af.png",
-    "static/media/limonero-letra.png": "/static/media/limonero-letra.1dcebd30eece5d8a2582.png",
-    "static/media/mariposa-letra.png": "/static/media/mariposa-letra.5199627db49082a0fb4b.png",
-    "static/media/oceanica-letra.png": "/static/media/oceanica-letra.354cd0faa3ee534a4a97.png",
+    "static/media/bolerito-midi-vertical.jpeg": "/static/media/bolerito-midi-vertical.ec791b4cc31b7fddbc0d.jpeg",
+    "static/media/bolerito-midi-horizontal.jpeg": "/static/media/bolerito-midi-horizontal.2d761a73ab359b5f6fcf.jpeg",
+    "static/media/limonero-midi-horizontal.jpeg": "/static/media/limonero-midi-horizontal.dce259852cb261617e3c.jpeg",
+    "static/media/limonero-midi-vertical.jpeg": "/static/media/limonero-midi-vertical.de7009b348d437d94dd8.jpeg",
+    "static/media/oceanica-midi-horizontal.jpeg": "/static/media/oceanica-midi-horizontal.667494fbf354ace4608a.jpeg",
+    "static/media/oceanica-midi-vertical.jpeg": "/static/media/oceanica-midi-vertical.8b0c8fc66c46f8ad9eac.jpeg",
+    "static/media/frio-midi-vertical.jpeg": "/static/media/frio-midi-vertical.30eb7b6a014d719d22dd.jpeg",
+    "static/media/mariposa-midi-vertical.jpeg": "/static/media/mariposa-midi-vertical.0173aac2ca171b1bdcef.jpeg",
+    "static/media/frio-midi-horizontal.jpeg": "/static/media/frio-midi-horizontal.1e8afd2b952899f49014.jpeg",
+    "static/media/mariposa-midi-horizontal.jpeg": "/static/media/mariposa-midi-horizontal.436df65656665ad720e9.jpeg",
     "static/media/social-media.png": "/static/media/social-media.377579a80a9f2ec3e789.png",
     "static/media/lacasa-logo.png": "/static/media/lacasa-logo.22e30147af346a26676f.png",
     "static/media/Nubifont-Regular.ttf": "/static/media/Nubifont-Regular.ab8bb1406db39c713abe.ttf",
     "index.html": "/index.html",
     "static/media/circle-xmark-regular.svg": "/static/media/circle-xmark-regular.3962bd1b9e383ecaf67e2ab325a88446.svg",
-    "main.d17aa386.css.map": "/static/css/main.d17aa386.css.map",
-    "main.309d504b.js.map": "/static/js/main.309d504b.js.map",
+    "main.685f12b6.css.map": "/static/css/main.685f12b6.css.map",
+    "main.6f6617e6.js.map": "/static/js/main.6f6617e6.js.map",
     "787.2e7c9cd4.chunk.js.map": "/static/js/787.2e7c9cd4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d17aa386.css",
-    "static/js/main.309d504b.js"
+    "static/css/main.685f12b6.css",
+    "static/js/main.6f6617e6.js"
   ]
 }

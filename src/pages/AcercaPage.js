@@ -25,7 +25,7 @@ const sectionVariants = {
   },
   animate: {
     opacity: 1,
-    y: 0,
+    y: -30,
     transition: {
       duration: 0.5,
     },
@@ -40,8 +40,8 @@ const AcercaPage = () => {
       initial="initial"
       animate="animate"
     >
-      <h1 className="heading">UN CD-WEB</h1>
-      <motion.div className="collaborate" variants={sectionVariants}>
+      <h1 className="header">UN CD-WEB</h1>
+      <motion.div className="info" variants={sectionVariants}>
         <p>
           Un rincón digital el cual se centra menos en la obra resultante y más
           en el proceso, el cuidado y la artesanía necesarios para llegar allí.

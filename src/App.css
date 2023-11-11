@@ -33,3 +33,10 @@ body {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* O ajusta a la altura deseada */
+}

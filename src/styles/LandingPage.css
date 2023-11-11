@@ -10,3 +10,15 @@
   width: 100%;
   height: 100%;
 }
+
+.watermark-container {
+  position: absolute;
+  bottom: 10px; /* Ajusta según sea necesario */
+  right: 10px; /* Ajusta según sea necesario */
+  opacity: 0.25;
+  font-size: 25px; /* Ajusta según sea necesario */
+  font-weight: bold;
+  font-family: "Nubifont";
+  color: #000;
+  text-decoration: line-through;
+}

@@ -26,7 +26,7 @@ const sectionVariants = {
   },
   animate: {
     opacity: 1,
-    y: -30,
+    y: 0,
     transition: {
       duration: 0.5,
     },

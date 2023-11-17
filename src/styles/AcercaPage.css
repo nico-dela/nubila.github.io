@@ -44,3 +44,10 @@
     padding: 20px;
   }
 }
+
+/* Estilos específicos para resoluciones de 280 x 653 */
+@media (width: 280px) and (height: 653px) {
+  .header {
+    font-size: 2.5rem; /* Ajusta el tamaño de la fuente para la pantalla específica */
+  }
+}

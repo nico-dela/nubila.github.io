@@ -1,5 +1,6 @@
+/* Estilos comunes para todas las resoluciones */
 #main-container {
-  transition: background-color 0.5s ease; /* Cambia la duración y la función de tiempo según tus preferencias */
+  transition: background-color 0.5s ease;
 }
 
 .heading {
@@ -17,7 +18,7 @@
 }
 
 .button-container {
-  margin-top: 20px; /* Espacio superior entre el video y el botón, ajusta según sea necesario */
+  margin-top: 20px;
 }
 
 .back-to-home-link img {
@@ -33,4 +34,33 @@
   font-family: "Nubifont";
   font-weight: bold;
   font-size: 20px;
+}
+
+/* Estilos específicos para resoluciones mayores a 768px */
+@media (min-width: 768px) {
+  #main-container {
+    padding: 20px; /* Añade más espacio alrededor del contenedor principal */
+  }
+
+  .heading {
+    font-size: 4rem; /* Aumenta el tamaño de la fuente para pantallas más grandes */
+  }
+}
+
+/* Estilos específicos para resoluciones mayores a 1024px */
+@media (min-width: 1024px) {
+  #main-container {
+    padding: 40px; /* Añade aún más espacio alrededor del contenedor principal */
+  }
+
+  .heading {
+    font-size: 5rem; /* Aumenta el tamaño de la fuente para pantallas más grandes */
+  }
+}
+
+/* Estilos específicos para resoluciones de 280 x 653 */
+@media (width: 280px) and (height: 653px) {
+  .heading {
+    font-size: 2.5rem; /* Ajusta el tamaño de la fuente para la pantalla específica */
+  }
 }

@@ -95,3 +95,9 @@
   height: 200px;
   width: 200px;
 }
+
+@media (width: 280px) and (height: 653px) {
+  .heading {
+    font-size: 2.5rem; /* Ajusta el tamaño de la fuente para la pantalla específica */
+  }
+}

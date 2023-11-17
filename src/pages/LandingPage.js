@@ -145,18 +145,6 @@ const LandingPage = () => {
         }}
       ></div>
       {buttons}
-      <div
-        style={{
-          position: "absolute",
-          bottom: 10, // Ajusta según sea necesario
-          right: 10, // Ajusta según sea necesario
-        }}
-        className="watermark-container" // Agrega la clase CSS aquí
-      >
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ duration: 0.5 }}>
-          SENTIMIENTO OCEANICO
-        </motion.div>
-      </div>
       <SocialMedia />
     </div>
   );

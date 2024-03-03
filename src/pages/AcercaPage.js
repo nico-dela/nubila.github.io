@@ -73,15 +73,26 @@ const AcercaPage = () => {
         <strong>¿Que decisiones tomamos?</strong>
         <ul>
           <li>
-            Publicar nuestra musica en este medio y, posterior a la presentación del disco, en Bandcamp hasta esperar la apertura de la distribuidora nacional{" "}
+            Publicar nuestra musica en este medio y, posterior a la presentación
+            del disco, en {' '}
             <a
               href={
-                "https://www.argentina.gob.ar/noticias/grupos-y-solistas-de-musica-podran-subir-sus-canciones-gratis-todas-las-plataformas-de"
+                "https://open.spotify.com/album/6yGIz5ApYNwXXIIoa4DYCU?si=SJ0R0d8gSESZk2Xujt2IZQ"
               }
               target="_blank"
               rel="noopener noreferrer"
             >
-              AMA
+              Spotify
+            </a>
+            {' '} y {' '}
+            <a
+              href={
+                "https://music.youtube.com/playlist?list=OLAK5uy_nqLO_XD9dzNd-aBYK1mYDHCqBE6o_XD2M"
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Youtube Music
             </a>
           </li>
           <li>Traducir el universo de la canción en lenguaje gráfico</li>

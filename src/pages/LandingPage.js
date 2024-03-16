@@ -69,7 +69,7 @@ const LandingPage = () => {
               justifyContent: "center",
               alignItems: "center",
               textDecoration: isStrikeThrough ? "line-through" : "none",
-              color: "#000",
+              color: "#1C1C1C",
               transform: `rotate(${randomRotation * 90}deg)`,
               transition: "transform 0.5s ease",
               backgroundColor: "transparent",

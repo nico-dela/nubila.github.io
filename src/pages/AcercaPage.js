@@ -73,27 +73,18 @@ const AcercaPage = () => {
         <strong>¿Que decisiones tomamos?</strong>
         <ul>
           <li>
-            Publicar nuestra musica en este medio y, posterior a la presentación
-            del disco, en {' '}
+            Difundir nuestra música a través de este medio y, luego de lanzar el
+            disco, distribuirla en {""}
             <a
               href={
-                "https://open.spotify.com/album/6yGIz5ApYNwXXIIoa4DYCU?si=SJ0R0d8gSESZk2Xujt2IZQ"
+                "https://linktr.ee/nubila?lt_utm_source=lt_share_link#341887887"
               }
               target="_blank"
               rel="noopener noreferrer"
             >
-              Spotify
-            </a>
-            {' '} y {' '}
-            <a
-              href={
-                "https://music.youtube.com/playlist?list=OLAK5uy_nqLO_XD9dzNd-aBYK1mYDHCqBE6o_XD2M"
-              }
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Youtube Music
-            </a>
+              plataformas digitales
+            </a>{" "}
+            de música.
           </li>
           <li>Traducir el universo de la canción en lenguaje gráfico</li>
           <li>

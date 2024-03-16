@@ -1,7 +1,8 @@
 import React, { useEffect, useState, Suspense } from "react";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import girasolesHorizontalImage from "../assets/images/girasoles-midi-horizontal.jpeg";
 import girasolesVerticalImage from "../assets/images/girasoles-midi-vertical.jpeg";
+import girasolesLetraImage from "../assets/images/girasoles-letra.png";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
 import { Puff } from "react-loader-spinner";
 import "../styles/LyricsPage.css";
@@ -14,19 +15,7 @@ const imageVariants = {
   animate: {
     opacity: 1,
     transition: {
-      duration: 0.3,
-    },
-  },
-};
-
-const linkVariants = {
-  initial: {
-    opacity: 0,
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      duration: 0.3,
+      duration: 0.5,
     },
   },
 };
@@ -34,6 +23,7 @@ const linkVariants = {
 const GirasolesPage = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
   const [loading, setLoading] = useState(true);
+  const [showLetraImage, setShowLetraImage] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
@@ -59,6 +49,35 @@ const GirasolesPage = () => {
     };
   }, [girasolesImage]);
 
+  const letraControls = useAnimation();
+  const imageControls = useAnimation();
+
+  const toggleImages = () => {
+    setShowLetraImage(!showLetraImage);
+  };
+
+  useEffect(() => {
+    if (showLetraImage) {
+      letraControls.start({
+        opacity: 1,
+        transition: { duration: 0.5 },
+      });
+      imageControls.start({
+        opacity: 0,
+        transition: { duration: 0.5 },
+      });
+    } else {
+      letraControls.start({
+        opacity: 0,
+        transition: { duration: 0.5 },
+      });
+      imageControls.start({
+        opacity: 1,
+        transition: { duration: 0.5 },
+      });
+    }
+  }, [showLetraImage, letraControls, imageControls]);
+
   return (
     <div className="lyrics">
       <Suspense
@@ -81,13 +100,49 @@ const GirasolesPage = () => {
           variants={imageVariants}
           initial="initial"
           animate="animate"
+          onClick={toggleImages}
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            maxWidth: "100%",
+            maxHeight: "80vh", // Ajustar altura máxima
+          }}
         >
-          {!loading && <img src={girasolesImage} alt="Girasoles partitura" />}
+          {!loading && (
+            <>
+              <motion.img
+                src={girasolesImage}
+                alt="Girasoles postal"
+                style={{
+                  opacity: showLetraImage ? 0 : 1,
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%",
+                }}
+                animate={imageControls}
+              />
+              <motion.img
+                src={girasolesLetraImage}
+                alt="Girasoles letra"
+                style={{
+                  opacity: showLetraImage ? 1 : 0,
+                  objectFit: "cover",
+                  maxWidth: "100%", 
+                  maxHeight: "100%",
+                  position: "absolute",
+                  top: "50%",
+                  left: "50%",
+                  transform: "translate(-50%, -50%)",
+                }}
+                animate={letraControls}
+              />
+            </>
+          )}
         </motion.div>
       </Suspense>
       <motion.div
         className="back-to-home-link"
-        variants={linkVariants}
+        variants={imageVariants}
         initial="initial"
         animate="animate"
       >

@@ -723,6 +723,15 @@ const CreditosPage = () => {
                   Paz Ellena
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.instagram.com/pazaravenac/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Paz Aravena
+                </a>
+              </li>
             </ul>{" "}
             <strong>S.</strong>
             <ul>

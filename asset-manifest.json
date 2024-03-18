@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.9a94fa55.css",
-    "main.js": "/static/js/main.8c850e6e.js",
+    "main.js": "/static/js/main.68253d9b.js",
     "static/css/70.2be8c503.chunk.css": "/static/css/70.2be8c503.chunk.css",
-    "static/js/70.f7425600.chunk.js": "/static/js/70.f7425600.chunk.js",
+    "static/js/70.06b3459d.chunk.js": "/static/js/70.06b3459d.chunk.js",
     "static/css/952.f4c52e37.chunk.css": "/static/css/952.f4c52e37.chunk.css",
-    "static/js/952.d485a424.chunk.js": "/static/js/952.d485a424.chunk.js",
+    "static/js/952.ded82a4a.chunk.js": "/static/js/952.ded82a4a.chunk.js",
     "static/js/787.d9c0db47.chunk.js": "/static/js/787.d9c0db47.chunk.js",
-    "static/js/322.807ab5ec.chunk.js": "/static/js/322.807ab5ec.chunk.js",
+    "static/js/322.60abc3cb.chunk.js": "/static/js/322.60abc3cb.chunk.js",
     "static/media/Frio.mp3": "/static/media/Frio.34924964161eaa27f302.mp3",
     "static/media/Girasoles.mp3": "/static/media/Girasoles.c9ea069356d6f65066d5.mp3",
     "static/media/Limonero.mp3": "/static/media/Limonero.b53266e3f171e50c179c.mp3",
@@ -17,11 +17,8 @@
     "static/media/girasoles-midi-vertical.jpeg": "/static/media/girasoles-midi-vertical.bfd99b8cf696345be7fb.jpeg",
     "static/media/girasoles-midi-horizontal.jpeg": "/static/media/girasoles-midi-horizontal.dec119a5252d62b99bae.jpeg",
     "static/media/banner.jpeg": "/static/media/banner.68e43d3c0a7b8ec7e6a6.jpeg",
-    "static/media/mariposa-letra.png": "/static/media/mariposa-letra.caf1d9ff79021550918a.png",
     "static/media/bolerito-midi-vertical.jpeg": "/static/media/bolerito-midi-vertical.ec791b4cc31b7fddbc0d.jpeg",
     "static/media/bolerito-midi-horizontal.jpeg": "/static/media/bolerito-midi-horizontal.2d761a73ab359b5f6fcf.jpeg",
-    "static/media/girasoles-letra.png": "/static/media/girasoles-letra.4ccaccd245729eff8130.png",
-    "static/media/frio-letra.png": "/static/media/frio-letra.c6bcf8888a33691c540c.png",
     "static/media/limonero-midi-horizontal.jpeg": "/static/media/limonero-midi-horizontal.dce259852cb261617e3c.jpeg",
     "static/media/limonero-midi-vertical.jpeg": "/static/media/limonero-midi-vertical.de7009b348d437d94dd8.jpeg",
     "static/media/oceanica-midi-horizontal.jpeg": "/static/media/oceanica-midi-horizontal.667494fbf354ace4608a.jpeg",
@@ -30,23 +27,22 @@
     "static/media/mariposa-midi-vertical.jpeg": "/static/media/mariposa-midi-vertical.0173aac2ca171b1bdcef.jpeg",
     "static/media/frio-midi-horizontal.jpeg": "/static/media/frio-midi-horizontal.1e8afd2b952899f49014.jpeg",
     "static/media/mariposa-midi-horizontal.jpeg": "/static/media/mariposa-midi-horizontal.436df65656665ad720e9.jpeg",
-    "static/media/limonero-letra.png": "/static/media/limonero-letra.d7bf93d33d8bc920f03e.png",
     "static/media/social-media.png": "/static/media/social-media.377579a80a9f2ec3e789.png",
     "static/media/lacasa-logo.png": "/static/media/lacasa-logo.22e30147af346a26676f.png",
     "static/media/Nubifont-Regular.ttf": "/static/media/Nubifont-Regular.ab8bb1406db39c713abe.ttf",
     "index.html": "/index.html",
     "static/media/circle-xmark-regular.svg": "/static/media/circle-xmark-regular.3962bd1b9e383ecaf67e2ab325a88446.svg",
     "main.9a94fa55.css.map": "/static/css/main.9a94fa55.css.map",
-    "main.8c850e6e.js.map": "/static/js/main.8c850e6e.js.map",
+    "main.68253d9b.js.map": "/static/js/main.68253d9b.js.map",
     "70.2be8c503.chunk.css.map": "/static/css/70.2be8c503.chunk.css.map",
-    "70.f7425600.chunk.js.map": "/static/js/70.f7425600.chunk.js.map",
+    "70.06b3459d.chunk.js.map": "/static/js/70.06b3459d.chunk.js.map",
     "952.f4c52e37.chunk.css.map": "/static/css/952.f4c52e37.chunk.css.map",
-    "952.d485a424.chunk.js.map": "/static/js/952.d485a424.chunk.js.map",
+    "952.ded82a4a.chunk.js.map": "/static/js/952.ded82a4a.chunk.js.map",
     "787.d9c0db47.chunk.js.map": "/static/js/787.d9c0db47.chunk.js.map",
-    "322.807ab5ec.chunk.js.map": "/static/js/322.807ab5ec.chunk.js.map"
+    "322.60abc3cb.chunk.js.map": "/static/js/322.60abc3cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a94fa55.css",
-    "static/js/main.8c850e6e.js"
+    "static/js/main.68253d9b.js"
   ]
 }

@@ -16,6 +16,8 @@ import Girasoles from "../assets/music/Girasoles.mp3";
 import Limonero from "../assets/music/Limonero.mp3";
 import MariposaOrigami from "../assets/music/Mariposa Origami.mp3";
 import Oceanica from "../assets/music/Oceanica.mp3";
+import OceanicaAcustica from "../assets/music/OceanicaAcustica.mp3";
+import Manneporte from "../assets/music/Manneporte.mp3";
 
 import { motion } from "framer-motion";
 
@@ -32,12 +34,14 @@ const MusicPlayer = () => {
 
   const songs = useMemo(
     () => [
-      { title: "Bolerito de Stapelia", source: BoleritoStapelia },
-      { title: "Frio", source: Frio },
+      { title: "Oceanica", source: Oceanica },
       { title: "Girasoles", source: Girasoles },
       { title: "Limonero", source: Limonero },
+      { title: "Bolerito de Stapelia", source: BoleritoStapelia },
+      { title: "The Manneporte", source: Manneporte },
+      { title: "Frio", source: Frio },
       { title: "Mariposa Origami", source: MariposaOrigami },
-      { title: "Oceanica", source: Oceanica },
+      { title: "Oceanica Acústica", source: OceanicaAcustica },
     ],
     []
   );

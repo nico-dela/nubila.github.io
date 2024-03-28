@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a94fa55.css",
-    "main.js": "/static/js/main.97a7762d.js",
-    "static/css/70.2be8c503.chunk.css": "/static/css/70.2be8c503.chunk.css",
+    "main.css": "/static/css/main.9cba9f2f.css",
+    "main.js": "/static/js/main.758cbc30.js",
+    "static/css/70.55366bb6.chunk.css": "/static/css/70.55366bb6.chunk.css",
     "static/js/70.f7425600.chunk.js": "/static/js/70.f7425600.chunk.js",
-    "static/css/375.d68b3497.chunk.css": "/static/css/375.d68b3497.chunk.css",
+    "static/css/375.de6aac3c.chunk.css": "/static/css/375.de6aac3c.chunk.css",
     "static/js/375.27dbb2a7.chunk.js": "/static/js/375.27dbb2a7.chunk.js",
     "static/js/787.d9c0db47.chunk.js": "/static/js/787.d9c0db47.chunk.js",
     "static/js/322.807ab5ec.chunk.js": "/static/js/322.807ab5ec.chunk.js",
@@ -38,17 +38,17 @@
     "static/media/Nubifont-Regular.ttf": "/static/media/Nubifont-Regular.ab8bb1406db39c713abe.ttf",
     "index.html": "/index.html",
     "static/media/circle-xmark-regular.svg": "/static/media/circle-xmark-regular.3962bd1b9e383ecaf67e2ab325a88446.svg",
-    "main.9a94fa55.css.map": "/static/css/main.9a94fa55.css.map",
-    "main.97a7762d.js.map": "/static/js/main.97a7762d.js.map",
-    "70.2be8c503.chunk.css.map": "/static/css/70.2be8c503.chunk.css.map",
+    "main.9cba9f2f.css.map": "/static/css/main.9cba9f2f.css.map",
+    "main.758cbc30.js.map": "/static/js/main.758cbc30.js.map",
+    "70.55366bb6.chunk.css.map": "/static/css/70.55366bb6.chunk.css.map",
     "70.f7425600.chunk.js.map": "/static/js/70.f7425600.chunk.js.map",
-    "375.d68b3497.chunk.css.map": "/static/css/375.d68b3497.chunk.css.map",
+    "375.de6aac3c.chunk.css.map": "/static/css/375.de6aac3c.chunk.css.map",
     "375.27dbb2a7.chunk.js.map": "/static/js/375.27dbb2a7.chunk.js.map",
     "787.d9c0db47.chunk.js.map": "/static/js/787.d9c0db47.chunk.js.map",
     "322.807ab5ec.chunk.js.map": "/static/js/322.807ab5ec.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a94fa55.css",
-    "static/js/main.97a7762d.js"
+    "static/css/main.9cba9f2f.css",
+    "static/js/main.758cbc30.js"
   ]
 }

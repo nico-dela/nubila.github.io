@@ -1,0 +1,45 @@
+.collaborate {
+  text-align: left;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .collaborate {
+    font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    padding: 15px; /* Ajusta el relleno para dispositivos móviles */
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .collaborate {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  /* Ajustes específicos para pantallas pequeñas como 280 x 653 */
+  .collaborate {
+    font-size: 12px;
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Ajustes específicos para pantallas como 1024 x 600 */
+  .collaborate {
+    font-size: 20px;
+    padding: 20px;
+  }
+}
+
+.bank-details {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  margin: 10px;
+}

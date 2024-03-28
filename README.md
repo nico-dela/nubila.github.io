@@ -41,7 +41,6 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-
 # Empezando con la Nubiweb
 
 ### Scripts Disponibles
@@ -84,11 +83,3 @@ No es necesario que uses `eject`. El conjunto de características seleccionadas 
 ### Aprende Más
 
 Para aprender React, consulta la [documentación de React](https://reactjs.org/).
-
-#### Despliegue
-
-Esta sección se ha movido aquí: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-#### `npm run build` falla al minimizar
-
-Esta sección se ha movido aquí: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

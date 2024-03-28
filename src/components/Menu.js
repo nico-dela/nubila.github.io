@@ -47,11 +47,6 @@ const Menu = ({ background }) => {
             />
           </Link>
         </div>
-        {/* <div className="menu-item">
-          <Link to="/sentimiento" className="menu-link" onClick={toggleMenu}>
-            SENTIMIENTO OCEANICO
-          </Link>
-        </div> */}
         <div className="menu-item">
           <Link to="/acerca" className="menu-link" onClick={toggleMenu}>
             UN CD-WEB

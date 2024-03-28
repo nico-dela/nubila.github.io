@@ -16,7 +16,8 @@
 
 .song-info {
   flex-grow: 1;
-  margin-left: 16px;
+  margin-left: 18px;
+  margin-right: 18px;
 }
 
 .song-title {
@@ -48,6 +49,7 @@
   appearance: none;
   outline: none;
   border-radius: 2px;
+  width: 100%;
 }
 
 .progress-bar::-webkit-slider-thumb {

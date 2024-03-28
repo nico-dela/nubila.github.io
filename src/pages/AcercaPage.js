@@ -43,7 +43,7 @@ const AcercaPage = () => {
       <h1 className="header">UN CD-WEB</h1>
       <motion.div className="info" variants={sectionVariants}>
         <p>
-          Un rincón digital el cual se centra menos en la obra resultante y más
+          Retrata un rincón digital el cual se centra menos en la obra resultante y más
           en el proceso, el cuidado y la artesanía necesarios para llegar allí.
         </p>
         <strong>¿Que ideas seguimos?</strong>

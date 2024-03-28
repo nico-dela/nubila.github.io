@@ -6,11 +6,16 @@
   }
 
 .info {
-    text-align: left;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
     font-size: 18px;
     color: #555;
     line-height: 1.5;
     padding: 20px;
+    margin: 20px;
   }
 
 

@@ -106,6 +106,7 @@ const GirasolesPage = () => {
             overflow: "hidden",
             maxWidth: "100%",
             maxHeight: "80vh", // Ajustar altura máxima
+            cursor: "pointer",
           }}
         >
           {!loading && (

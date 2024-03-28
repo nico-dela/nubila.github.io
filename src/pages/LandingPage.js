@@ -26,28 +26,34 @@ const LandingPage = () => {
     const generateRandomButton = (link, isStrikeThrough) => {
       const screenWidth = window.innerWidth;
       const screenHeight = window.innerHeight;
-
+    
       const buttonWidth = 110;
       const buttonHeight = 40;
-
+    
       const horizontalMargin = 70; 
       const verticalMargin = 70;
-
-      const randomX = Math.floor(
+    
+      let randomX = Math.floor(
         horizontalMargin +
-          Math.random() * (screenWidth - buttonWidth - 2 * horizontalMargin)
+        Math.random() * (screenWidth - buttonWidth - 2 * horizontalMargin)
       );
-
-      const randomY = Math.floor(
+    
+      let randomY = Math.floor(
         verticalMargin +
-          Math.random() *
-            (screenHeight -
-              buttonHeight -
-              2 * verticalMargin)
+        Math.random() * (screenHeight - buttonHeight - 2 * verticalMargin)
       );
-
+    
+      // Verificar si el botón está fuera del área visible de la pantalla
+      if (randomX + buttonWidth > screenWidth) {
+        randomX = screenWidth - buttonWidth - horizontalMargin;
+      }
+    
+      if (randomY + buttonHeight > screenHeight) {
+        randomY = screenHeight - buttonHeight - verticalMargin;
+      }
+    
       const randomRotation = Math.floor(Math.random() * 2); // 0 o 1
-
+    
       return (
         <motion.div
           key={link.url}
@@ -91,7 +97,7 @@ const LandingPage = () => {
           </Link>
         </motion.div>
       );
-    };
+    };    
 
     const links = [
       { text: "OCEANICA", url: "oceanica" },

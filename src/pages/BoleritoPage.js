@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Suspense } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import boleritoHorizontalImage from "../assets/images/bolerito-midi-horizontal.jpeg";
 import boleritoVerticalImage from "../assets/images/bolerito-midi-vertical.jpeg";
 import volverImage from "../assets/images/circle-xmark-regular.svg";
@@ -59,6 +59,8 @@ const BoleritoPage = () => {
     };
   }, [boleritoImage]);
 
+  const imageControls = useAnimation();
+
   return (
     <div className="lyrics">
       <Suspense
@@ -81,9 +83,24 @@ const BoleritoPage = () => {
           variants={imageVariants} // Utiliza imageVariants aquí
           initial="initial"
           animate="animate"
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            maxWidth: "100%",
+            maxHeight: "80vh", // Ajustar altura máxima
+          }}
         >
           {!loading && (
-            <img src={boleritoImage} alt="Bolerito de Stapelia partitura" />
+            <motion.img
+                src={boleritoImage}
+                alt="Bolerito postal"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "100%",
+                }}
+                animate={imageControls}
+              />
           )}
         </motion.div>
       </Suspense>

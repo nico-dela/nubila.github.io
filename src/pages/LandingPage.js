@@ -21,6 +21,7 @@ const buttonVariants = {
 
 const LandingPage = () => {
   const [buttons, setButtons] = useState([]);
+  const [buttonFontSize, setButtonFontSize] = useState(35); // Tamaño de fuente inicial
 
   useEffect(() => {
     const generateRandomButton = (link, isStrikeThrough) => {
@@ -83,7 +84,7 @@ const LandingPage = () => {
               cursor: "pointer",
               fontWeight: "bold",
               fontFamily: "Nubifont",
-              fontSize: 35,
+              fontSize: buttonFontSize, // Usar el estado buttonFontSize para establecer el tamaño de la fuente
               padding: "5px 10px", // Ajusto el espacio interno
             }}
             onMouseEnter={(e) => {
@@ -116,6 +117,21 @@ const LandingPage = () => {
     );
 
     setButtons(generatedButtons);
+  }, [buttonFontSize]); // Escucha los cambios en el tamaño de la fuente
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Ajusta el tamaño de la fuente dependiendo del ancho de la ventana
+      setButtonFontSize(window.innerWidth <= 375 ? 30 : 35);
+    };
+
+    // Agrega un listener de resize para ajustar dinámicamente el tamaño de la fuente
+    window.addEventListener("resize", handleResize);
+
+    // Limpia el listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   const hexColors = [

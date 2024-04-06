@@ -4,6 +4,13 @@
   overflow: hidden;
 }
 
+.heading {
+  font-family: "Nubifont";
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .credits-container {
   height: 100%;
   width: 100%;

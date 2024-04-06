@@ -8,6 +8,7 @@ import MariposaPage from "./pages/MariposaPage";
 import FrioPage from "./pages/FrioPage";
 import LimoneroPage from "./pages/LimoneroPage";
 import CreditosPage from "./pages/CreditosPage";
+import SentimientoPage from "./pages/SentimientoPage";
 import ColaboraPage from "./pages/ColaboraPage";
 import OfflinePage from "./pages/OfflinePage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -54,6 +55,7 @@ const App = () => {
                 <Route path="/frio" element={<FrioPage />} />
                 <Route path="/limonero" element={<LimoneroPage />} />
                 <Route path="/creditos" element={<CreditosPage />} />
+                <Route path="/sentimiento" element={<SentimientoPage />} />
                 <Route path="/colabora" element={<ColaboraPage />} />
                 <Route path="/acerca" element={<AcercaPage />} />
                 <Route path="*" element={<NotFoundPage />} />

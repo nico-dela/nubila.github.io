@@ -67,7 +67,6 @@ const SentimientoPage = () => {
     <motion.div
       className="container"
       style={{ backgroundColor }}
-      id="main-container"
       variants={pageVariants}
       initial="initial"
       animate="animate"
